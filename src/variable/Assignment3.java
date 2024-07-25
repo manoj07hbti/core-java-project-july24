@@ -18,5 +18,9 @@ public class Assignment3 {
         System.out.println("Address: " +address);
         System.out.println("DOB: " +dob);
 
+        System.out.println("Birth Date: " +dob.getDayOfMonth());
+        System.out.println("Birth Month: " +dob.getMonth());
+        System.out.println("Birth Year: " +dob.getYear());
+
     }
 }

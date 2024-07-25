@@ -7,9 +7,9 @@ public class Demo {
 
         System.out.println("This is my first java program..");
 
-        System.out.println("This is third line");
+        System.out.println("My name bashu khan");
 
-
+        System.out.println("I am blong to nagla ram kishan line par tundla..");
     }
 
 

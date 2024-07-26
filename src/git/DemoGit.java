@@ -6,7 +6,7 @@ public class DemoGit {
 
         System.out.println("This is my real commit");
 
-        System.out.println("this is real commit");
+        System.out.println("this is not real commit");
 
 
 

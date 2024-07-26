@@ -21,5 +21,7 @@ public class DemoGit {
         System.out.println("Rahul");
 
         System.out.println("Rohan");
+
+        System.out.println("Rahul");
     }
 }

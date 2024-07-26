@@ -5,6 +5,7 @@ public class Revisionjava2 {
 
 
         System.out.println("this is git revision");
+        System.out.println("ths is real git word");
 
     }
 

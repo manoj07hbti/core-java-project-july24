@@ -28,5 +28,7 @@ public class VariableManipulation {
         double divide=(double) a/b; //
         System.out.println("Division is: "+divide);
 
+
+
     }
 }

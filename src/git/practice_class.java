@@ -7,6 +7,7 @@ public class practice_class {
 
 
         System.out.println("this is java word");
+        System.out.println("this is word of java");
 
     }
 

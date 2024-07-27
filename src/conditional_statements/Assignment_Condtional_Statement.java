@@ -50,15 +50,15 @@ public class Assignment_Condtional_Statement {
             System.out.println("Candidate is not from science department :"+student1);
         }
 
-        int man=7;
-        if(man>6){
+        int height=7;
+        if(height>6){
             System.out.println("Man is more than 6 feet");
-            System.out.println("Man is more than 6 feet : "+man);
+            System.out.println("Man is more than 6 feet : "+height);
         }
-        int man1=5;
-        if(man1<6);
+         height=5;
+        if(height<6);
         System.out.println("Man is not more than 6 feet");
-        System.out.println("Man is not more than 6 feet : "+man1);
+        System.out.println("Man is not more than 6 feet : "+height);
 
 
 

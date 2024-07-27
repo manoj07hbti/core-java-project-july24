@@ -16,6 +16,7 @@ public class voting_demo {
 
         if(voting < 18 ){
             System.out.println("Person is not eligible for election" +voting);
+
         }
 
     }

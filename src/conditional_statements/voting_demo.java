@@ -1,6 +1,6 @@
 package conditional_statements;
 
-public class votingdemo {
+public class voting_demo {
 
     public static void main(String args []) {
 

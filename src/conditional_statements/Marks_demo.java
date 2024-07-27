@@ -8,11 +8,11 @@ public class Marks_demo {
         int marks = 33;
 
         if (marks > 45) {
-            System.out.println("Person is eligible for exam" + marks);
+            System.out.println("Person is eligible for exam present" + marks);
         }
 
         if (marks < 32) {
-            System.out.println("Person is not eligible for exam" + marks);
+            System.out.println("Person is not eligible for exam present" + marks);
 
         }
     }

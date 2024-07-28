@@ -56,6 +56,11 @@ public class VariableTestJuly28 {
             System.out.println("c = "+c);
         }
 
+        long num=35632231111123L;
+        double percentage=0.07;
+        double result= num*percentage;
+        System.out.println("7%of"+number + "is:"+result);
+
 
 
 

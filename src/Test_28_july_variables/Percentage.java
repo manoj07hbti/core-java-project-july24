@@ -3,7 +3,7 @@ package Test_28_july_variables;
 public class Percentage {
 
 
-    public static void main(String args [])){
+    public static void main(String args []) {
 
     //SYNTAX; dobule result=(dobule) (number*percentage)/100
 

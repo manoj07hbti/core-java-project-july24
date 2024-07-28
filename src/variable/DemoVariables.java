@@ -1,6 +1,6 @@
 package variable;
 
-public class DemoVariables {
+public class    DemoVariables {
 
     public static void main(String[] args) {
 

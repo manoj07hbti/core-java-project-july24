@@ -16,6 +16,22 @@ public class Test_28_july {
 
 
 
+    System.out.printing("printing ****************"+**************);
+
+
+
+ //write a code to find 7%;
+        int no=35632231111123;
+
+        35632231111123*07%100=2.49425617E12;
+
+
+
+
+
+
+
+
     }
 
 

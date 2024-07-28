@@ -32,23 +32,22 @@ public class VariableTestJuly28 {
 
       // Decreement operator
 
-        int i=1;
-        i--;
-        System.out.println("decreement.."+i);
-
-        int j=2;
-        j--;
-        System.out.println("decreement.."+j);
+        int i=89;
+        int j=25;
+         System.out.println("BEFORE DECREEMENT "+i + ":"+j);
+         i--;
+         j--;
+         System.out.println("After decreement "+i + ":"+j);
 
         // Increement operator
 
-        int x1=1;
-        x1++;
-        System.out.println("Increement.."+x1);
+        x=23;
+        y=24;
+        System.out.println("BEFORE INCREEMENT VALUE OF X AND Y "+x +":"+y);
+        x++;
+        y++;
+        System.out.println("AFTER INCREEMENT "+x + ":"+y);
 
-        int y1=2;
-        y1++;
-        System.out.println("Increement.."+y1);
 
         // CODE START PATTERN
 

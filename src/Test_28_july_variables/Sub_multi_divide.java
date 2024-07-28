@@ -17,6 +17,16 @@ public class Sub_multi_divide {
 
         double divide= (double)x/y;
         System.out.println("Divide.."+divide);
+        // CODE START PATTERN
+
+        for(int c=1; c<=5; c++) {
+            System.out.println("c = "+c);
+        }
+              System.out.println("*");
+              System.out.println("**");
+              System.out.println("***");
+              System.out.println("****");
+              System.out.println("*****");
 
     }
 }

@@ -3,19 +3,24 @@ package Test_28_july_variables;
 public class Increment {
 
     public static void main(String args []) {
+        // Decreement operator
 
-        int x=3;
-        x++;
-        System.out.println("printing befor :"+x);
+        int i=4;
+        i--;
+        System.out.println("decreement.."+i);
 
-        int y=6;
-        y++;
-        System.out.println("printing befor :"+y);
+        int j=8;
+        j--;
+        System.out.println("decreement.."+j);
 
-         //decrement
-        x=3;
+        // Increement operator
 
-        System.out.println("printing after :"+x);
+        int x1=3;
+        x1++;
+        System.out.println("Increement.."+x1);
 
+        int y1=6;
+        y1++;
+        System.out.println("Increement.."+y1);
     }
 }

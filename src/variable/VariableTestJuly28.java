@@ -50,10 +50,11 @@ public class VariableTestJuly28 {
 
 
         // CODE START PATTERN
-
-        for(int c=1; c<=5; c++) {
-            System.out.println("c = "+c);
-        }
+         System.out.println("*");
+         System.out.println("**");
+         System.out.println("***");
+         System.out.println("****");
+         System.out.println("*****");
 
         long num=35632231111123L;
         double percentage=0.07;

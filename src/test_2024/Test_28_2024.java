@@ -62,13 +62,9 @@ public class Test_28_2024 {
         //6) adhaar card number ,name, city of candidate
 
         String name="PRIYANKA";
-        System.out.println("NAME OF CANDIDATE:"+ name);
-
         String city="INDORE";
-        System.out.println("CITY OF CANDIDATE:"+ city);
-
       long mynum = 222233334444L;
-        System.out.println("ADHAAR CARD NUMBER:"+mynum);
+        System.out.println("NAME:"+name +" : "+"CITY:"+city + " : "+ "ADHAAR:"+mynum);
 
         //7)find 7% of 3562231111123 number
 

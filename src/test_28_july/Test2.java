@@ -4,6 +4,7 @@ public class Test2 {
 
     public static void main (String [] args){
 
+        // answer number 7
 
         int x=9;
         int y=6;

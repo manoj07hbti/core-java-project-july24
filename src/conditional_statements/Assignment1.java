@@ -4,58 +4,37 @@ public class Assignment1 {
 
     public static void main(String[] args) {
 
-        //1- check voting eligibility
-        int age=17;
+        //1- marks
+        int marks=70;
 
-        if(age>18){
-            System.out.println("Welcome to Voting System");
-        } else{
-            System.out.println("You're not eligible for Voting as your age is less than 18 years.");
+        if(marks>=60){
+            System.out.println("First Division");
+        }
+        if(marks<33){
+            System.out.println("Not cleared exam");
         }
 
-        //2- marks
-        int marks=45;
+        //2- price
+        double price=492.40;
 
-        if(marks>33){
-            System.out.println("Clear the Exam");
-        }else{
-            System.out.println("Not Cleared the Exam");
+        if(price >5000){
+            System.out.println("Costly Product: "+price);
+        }
+        if(price < 5000){
+            System.out.println("Average Price Product: "+price);
         }
 
-        //3-Nationality check
-        String country= "INDIA";
+        //3- Nationality
+        String country="INDIA";
 
         if(country == "INDIA"){
-            System.out.println("INDIAN");
-        }else{
-            System.out.println("Not INDIAN");
+            System.out.println("You are Indian");
+        }
+        if(country != "INDIA"){
+            System.out.println("You are not Indian");
         }
 
-        //4- Science
-        String dept="COMMERCE";
-
-        if(dept == "SCIENCE"){
-            System.out.println("SCIENCE DEPARTMENT STUDENT");
-        }else{
-            System.out.println("NOT SCIENCE DEPARTMENT STUDENT");
         }
-
-        //5- Height Check
-        double height= 5.11;
-
-        if(height>6){
-            System.out.println("Candidate is Tall");
-        }else{
-            System.out.println("Candidate is not Tall");
-        }
-
-
-
-
-
-
-        }
-
     }
 
 

@@ -1,11 +1,10 @@
 package test_28_july;
 
-public class Test2 {
+public class Test {
 
+    public static void main(String []args){
 
-
-
-        // answer number 7
+    //answer number 7
 
         int x=9;
         int y=6;
@@ -22,7 +21,7 @@ public class Test2 {
         System.out.println("Division is ;"+divide);
 
 
-
     }
+
 
 }

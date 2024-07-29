@@ -21,17 +21,19 @@ public class Test {
         //3
         long num =  35632231111123L;
 
-        long result =  (num*7)/100;
-        System.out.println("7% of 35632231111123 is: " +result);
+        double result = (double) (num*7)/100;
+        System.out.println("7% of " +num + " is: " +result);
 
         //4
         int x=8, y=3;
 
-        System.out.println("Remainder of 8 and 3 is: " +x%y);
+        System.out.println("Remainder of " +x +  " and "  +y +" is : " +x%y);
 
         //5
         x= 45;
         y =66;
+        System.out.println("Value of x before increment is: " +x);
+        System.out.println("Value of y before increment is: " +y);
 
         x++;
         y++;
@@ -43,21 +45,22 @@ public class Test {
         //6
         int i= 10;
         int j= 20;
+        System.out.println("Value of i before decrement is: " +i);
+        System.out.println("Value of j before decrement is: " +j);
 
         i--;
         j--;
-
         System.out.println("Value of i after decrement is: " +i);
         System.out.println("Value of j after decrement is: " +j);
 
         //7
          x=10;
-         y=2;
+         y=4;
 
         int add= x+y;
         int sub= x-y;
         int mul= x*y;
-        int div= x/y;
+        double div= (double) x/y;
 
         System.out.println("Addition of x and y: " +add);
         System.out.println("Subtraction of x and y: " +sub);

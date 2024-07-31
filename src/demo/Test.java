@@ -6,7 +6,7 @@ public class Test {
 
         System.out.println("This file is created for GIT commit demo purpose..");
 
-         System.out.println("my secon git);
+         System.out.println("my second git");
 
 
 

@@ -6,7 +6,7 @@ public class Marks_demo {
 
         // SYNTAX: condition
 
-        int marks = 60;
+        int marks = 70;
         if (marks > 33) {
             System.out.println("this studend passed in first div " + marks);
         }

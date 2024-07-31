@@ -30,7 +30,7 @@ public class NestedStatement1 {
             System.out.println("NOT DIVISIBLE BY 5:"+"BECAUSE THE NUMBER IS:"+num);
         }
 
-        //number is odd and divisible by 7
+        //example1)-number is odd and divisible by 7
         num=30;
 
         if(num%3==0){
@@ -54,5 +54,32 @@ public class NestedStatement1 {
         else {
             System.out.println("NOT DIVISIBLE BY 7:"+"BECAUSE THE NUMBER IS:"+num);
         }
+
+        //example2)-number is prime number and divisible by 3
+
+        num=31;
+
+        if(num%num==0) {
+            System.out.println("IT IS A PRIME NUMBER:" + num);
+        }
+        if(num%3==0){
+            System.out.println("DIVISIBLE BY 3:"+num);
+        }
+        else{
+            System.out.println("NOT DIVISIBLE BY 3:"+num);
+        }
+
+        num=3;
+
+        if(num%num==0) {
+            System.out.println("IT IS A PRIME NUMBER:" + num);
+        }
+        if(num%3==0){
+            System.out.println("DIVISIBLE BY 3:"+num);
+        }
+        else{
+            System.out.println("NOT DIVISIBLE BY 3:"+num);
+        }
+
     }
 }

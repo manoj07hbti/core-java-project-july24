@@ -1,6 +1,6 @@
 package conditional_statements;
 
-public class NestedAssignment1 {
+public class NestedStatement1 {
 
     public static void main(String[] args) {
 

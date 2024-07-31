@@ -6,7 +6,7 @@ public class if_else_price {
 
 
 
-        double price=3087.90;
+        double price=3087.70;
 
         if(price >5000){
             System.out.println("Product is costly "+price);

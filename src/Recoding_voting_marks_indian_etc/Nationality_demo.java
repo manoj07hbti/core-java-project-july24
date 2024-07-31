@@ -6,7 +6,7 @@ public class Nationality_demo {
 
         // Syntax: condition
 
-        String india = "indian";
+        String india = "indiane";
 
         if (india=="indian"){
 

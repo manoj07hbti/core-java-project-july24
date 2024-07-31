@@ -1,4 +1,4 @@
-package Test_28_july_variables;
+package test_28_july_variables;
 
 public class Sub_multi_divide {
 
@@ -19,8 +19,8 @@ public class Sub_multi_divide {
         System.out.println("Divide.."+divide);
         // CODE START PATTERN
 
-        for(int c=1; c<=5; c++) {
-            System.out.println("c = "+c);
+        for(int i=1; i<=5; i++) {
+            System.out.println("i = "+i);
         }
               System.out.println("*");
               System.out.println("**");

@@ -1,19 +1,17 @@
-package conditional_statements;
+package Recoding_voting_marks_indian_etc;
 
-  public class Indian_nonindian_demo {
+public class fi_else_indian {
 
     public static void main(String args []){
-
-        // String: condition
 
 
         String india = "indian";
 
-        if (india=="indian"){
+        if (india=="indian") {
 
             System.out.println("this citizen is from" + india);
 
-            if(india !="indian");
+        }else{
 
             System.out.println("this citizen is non "+india);
         }

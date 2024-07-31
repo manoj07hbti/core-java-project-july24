@@ -1,4 +1,4 @@
-package Test_28_july_variables;
+package test_28_july_variables;
 
 public class Percentage {
 
@@ -7,8 +7,8 @@ public class Percentage {
 
     //SYNTAX; dobule result=(dobule) (number*percentage)/100
 
-    long number = 3563223;
-    long percentage =7;
+   long number = 35632231111123L;
+    long  percentage =7;
 
     double result = (double)(number*percentage)/100;
 

@@ -1,4 +1,4 @@
-package Test_28_july_variables;
+package test_28_july_variables;
 
 public class Increment {
 

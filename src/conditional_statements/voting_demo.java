@@ -11,7 +11,7 @@ public class voting_demo {
         int voting = +18;
 
         if (voting > 21) {
-            System.out.println("Person is eligible for election" +voting);
+            System.out.println("Person is elligible for election" +voting);
         }
 
         if(voting < 18 ){

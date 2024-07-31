@@ -1,7 +1,7 @@
 public class Test_28_july {
 
     public static void main(String[] args) {
-
+//1
         String name;
         name="Rahul" System.out.println("printing name "+name);
 
@@ -13,7 +13,7 @@ public class Test_28_july {
  System.out.println("printing name"+name+"prenting adharcardno"+Aadharcard+"printing city"+city candidate)
 
 
-
+//2
 
     System.out.println("*");
      System.out.println("**");
@@ -22,7 +22,7 @@ public class Test_28_july {
      System.out.println("****");
      System.out.println("*****");
 
-
+  //3
 
  //write a code to find 7%;
         long no =35632231111123L;

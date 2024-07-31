@@ -30,9 +30,9 @@ public class Test {
         // FIND 7% OF 35632231111123
 
 
-         long number=35632231111123;
+         long number=356322311;
 
-        double percentage=0.07;
+        double percentage=7;
 
         double result=number*percentage;
 
@@ -51,6 +51,67 @@ public class Test {
         int sum=y+x;
 
         System.out.println("sum"+"sum");
+
+
+
+        // PRINT A CODE STAR PATTERN
+
+
+        System.out.println("*");
+
+        System.out.println("**");
+
+        System.out.println("***");
+
+        System.out.println("****");
+
+        System.out.println("*****");
+
+        System.out.println("******");
+
+
+
+
+        // PRINT DECREMENT VALUE I AND J
+
+        int i=22;
+        int j=42;
+        System.out.println("decrement value i & j"+i+j);
+
+
+
+
+       // PRINT CODE CALCULATE
+        //ADDICTION OF X&Y
+
+        x=90;
+        y=70;
+
+        System.out.println("addiction of x and y"+sum);
+
+
+        // SUBTRACTION OF X & Y
+
+       int X=60;
+        int Y=40;
+       int sub= x-y;
+
+       System.out.println("substraction of x and y"+sub);
+
+
+       // MULTI X&Y
+
+        X=200;
+        Y=2;
+        int multi= x*y;
+        System.out.println("multiplaction of x and y"+multi);
+
+        x=400;
+        y=6;
+        int divide=x/y;
+
+        System.out.println("division of x and y"+divide);
+
 
 
 

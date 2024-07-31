@@ -2,7 +2,7 @@ public class IncreementOperator {
 
 
     public static void main(String[] args) {
-
+//5
      //   Increment+operator:++=value1;
 
         int x =0;
@@ -19,7 +19,7 @@ public class IncreementOperator {
         System.out.println("value of y after increment"+y;
         y++;
         System.out.println("value of y after another increment"+y);
-
+//6
 
  //  decrement+operator:variable--=value1;
 

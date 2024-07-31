@@ -8,7 +8,7 @@ public class Science_demo {
         // String: condition
 
 
-        String section = "science student";
+        String section = "science students";
 
         if (section=="science student"){
 

@@ -4,7 +4,7 @@ public class Price_demo {
 
     public static void main(String args []){
 
-        double price=2530.670;
+        double price=2530.67;
 
         if(price >5000){
             System.out.println("Product is costly "+price);

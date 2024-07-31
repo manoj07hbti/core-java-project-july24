@@ -9,7 +9,7 @@ public class voting_demo {
 
         //CODE   }
 
-        int voting = +17;
+        int voting = +16;
 
         if (voting > 25) {
             System.out.println("Person is elligible for election" +voting);

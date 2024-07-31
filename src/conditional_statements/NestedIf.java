@@ -4,7 +4,7 @@ public class NestedIf {
 
     public static void main(String[] args) {
 
-        int number=-20;
+        int number=-17;
         if(number>0){
 
             if(number%2 == 0){

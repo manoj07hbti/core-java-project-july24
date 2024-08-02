@@ -52,6 +52,18 @@ public class NestedIf {
             }
         }
 
+
+        number=100;
+        if(number>0){
+            if(number%10==0){
+                System.out.println("Even number..."+number);
+            } else{
+                System.out.println("odd number...");
+            }
+        }
+
+
+
         }
 
 

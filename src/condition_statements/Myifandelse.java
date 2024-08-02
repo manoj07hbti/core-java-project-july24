@@ -10,7 +10,7 @@ package condition_statements;public class Myifandelse {
             System.out.println("welcome to voting system....."+age);
 
         }  else {
-            System.out.println("you are not elligble for voting");
+            System.out.println("you are not eligible for voting");
         }
 
 
@@ -34,7 +34,7 @@ package condition_statements;public class Myifandelse {
 
 
         String country= "indian";
-        if(country=="dubai"){
+        if(country != "dubai"){
             System.out.println("you are indian");
         } else {
             System.out.println("you are not indian...");
@@ -48,7 +48,3 @@ package condition_statements;public class Myifandelse {
     }
 
 
-
-
-
-}

@@ -57,6 +57,8 @@ public class AndOperater {
         }
 
 
+        // 2 =FIND ELIGIBLE VOTER OF UP
+
          // TRUE && FALSE
 
          age=18;

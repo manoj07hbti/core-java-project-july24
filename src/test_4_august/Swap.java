@@ -4,8 +4,17 @@ public class Swap {
 
     public static void main(String[] args) {
 // write a code to swapping two number a and b without using third variabls
-        //a+b=>a=a+b; 3+=5=>3=3+5=8
-      System.out.println("printing value of  a+b");
+        int a=10;
+        int b=5
+                System.out.println("befor swapping.."+a+":"+b);
+
+     //   a=a+b=10+5=15;
+       // b=a-b=10-5=5;
+       // a=a-b=10-5=5;
+
+        a=a+b;
+        b=a-b;
+        System.out.println("after swapping..."+a+":"+b);
 
 
 

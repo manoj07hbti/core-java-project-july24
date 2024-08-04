@@ -49,7 +49,7 @@ public class AndOperator {
           }
         }//write a code to find eligible vote of up
 
-        // age> && String state =up
+        // age> && String up =up
 
         int age= 24;
         String up ="up";

@@ -54,9 +54,9 @@ public class Test_28_2024 {
         int multi = x*y;
         System.out.println("MULTIPLICATION OF X AND Y :"+ multi);
 
-        x=300;
+        x=279;
         y=2;
-        int divide=x/y;
+       double divide=(double)x/y;
         System.out.println("DIVISION OF X AND Y :"+ divide);
 
         //6) adhaar card number ,name, city of candidate

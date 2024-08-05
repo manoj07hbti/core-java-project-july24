@@ -3,6 +3,7 @@ package test_4_august;
 public class WithdrowMoney {
 
     public static void main(String[] args) {
+  // 1. it should check balance should be greater than zero and check amount should be multiple of 100
 
         int balance=6000;
         if(balance>0 && balance<30000){
@@ -13,9 +14,9 @@ public class WithdrowMoney {
           }
         }
 
-        //2. multiple balance 100
+//2. multiple balance 100
         balance = 400;
-        if (balance >=0 && balance<=30000){
+        if         (balance >=0 && balance<=30000){
             if(balance%100==0){
             System.out.println("valid balance"+balance);
             }else{

@@ -161,16 +161,6 @@ public class Percentage {
         }
 
 
-        // write a code A and B
-
-        int a=5;
-
-        int b=8;
-
-        int sum=a+b;
-
-        System.out.println("Sum.."+sum);
-
 
 
     }

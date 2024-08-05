@@ -4,7 +4,7 @@ public class Withdraw_Money
 {
     public static void main(String[] args)
     {
-        int Amount =10;
+        int Amount =0;
         int AmountLimit =10000;
 
         //A code to withdrawing amount of the user

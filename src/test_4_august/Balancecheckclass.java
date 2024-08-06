@@ -21,7 +21,7 @@ public class Balancecheckclass {
             }
         }
 
-        // -2 balance<10000 and 5000>
+        // -2 balance<10000 and >5000
 
         balance = 6000;
         if (balance > 0) {

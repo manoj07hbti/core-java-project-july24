@@ -4,17 +4,24 @@ public class SwapNumClass {
 
     public static void main(String[] args) {
 
+        //write a code to swap two number ,without using third variable
+
         int a=10;
         int b=5;
-        System.out.println("before swapping a:"+a);
-        System.out.println("before swapping b:"+b);
+        System.out.println("before swapping->"+ "a:"+ a + " and " + "b:"+ b);
 
-        a-=b;
+        //mathmatics operations for swapping two number
 
-        System.out.println("after swapping a:"+a);
+        //a=a+b;     10+5;
+        //b=a-b;     10-5;
+        //a=a-b;     10-5;
 
-        b+=a;
+        a=a+b;
+        b=a-b;
+        a=a-b;
 
-        System.out.println("after swapping b:"+b);
+        System.out.println("after swapping->"+ "a:"+ a + " and " + "b:"+ b);
+
+
     }
 }

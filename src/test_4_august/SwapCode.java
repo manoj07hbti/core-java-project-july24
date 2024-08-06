@@ -15,6 +15,7 @@ public class SwapCode {
 
         x=x+y;
         y=x-y;
+        x=x-y;
 
         System.out.println("AFTER SWAPPING.... "+x + ":" +y);
 

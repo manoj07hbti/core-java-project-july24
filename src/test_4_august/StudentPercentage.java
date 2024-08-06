@@ -6,49 +6,19 @@ public class StudentPercentage {
 
         //write a code to check %of student
         //case1: 33<=percentage<60
+        //case2: 60=<percentage<75
+        //case3: percentage>75
 
-        int percentage=45;
+        int percentage=100;
 
         if(percentage>=33 && percentage<60) {
             System.out.println("second division");
-        }
-        if(percentage>=60 && percentage<75) {
+        }else if(percentage>=60 && percentage<75) {
             System.out.println("first divison");
-        }
-            if(percentage>75){
+        }else if(percentage>75){
                 System.out.println("gold medalist");
+        }else{
+            System.out.println("fail");
         }
-
-        percentage=70;
-
-        if(percentage>=33 && percentage<60) {
-            System.out.println("second division");
-        }
-            if(percentage>=60 && percentage<75) {
-                System.out.println("first divison");
-            }
-                if(percentage>75){
-                    System.out.println("gold medalist");
-
-        }
-
-        percentage=90;
-
-        if(percentage>=33 && percentage<60) {
-            System.out.println("second division");
-        }
-        if(percentage>=60 && percentage<75) {
-            System.out.println("first divison");
-        }
-        if(percentage>75){
-            System.out.println("gold medalist");
-
-        }
-
-    }
-
-    public static class LoginJavaClass {
-
-
     }
 }

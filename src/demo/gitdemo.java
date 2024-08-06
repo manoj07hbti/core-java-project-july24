@@ -1,6 +1,6 @@
 package demo;
 
-public class demogit {
+public class gitdemo {
 
     public static void main(String[] args) {
 

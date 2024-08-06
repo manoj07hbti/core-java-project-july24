@@ -12,7 +12,7 @@ public class VotingElligiblity {
             ;
             System.out.println("this not eligble for voting" + age);
         }
-         int age =15;
+          age =15;
         if(age>18){
             System.out.println("eligible for voting"+age);
         } else{

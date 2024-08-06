@@ -81,8 +81,8 @@ public class AndOperator {
 
         //4.
         // FALSE && FALSE=FALSE
-        int age = 21;
-        String up = "firozabad";
+        age = 21;
+        up = "firozabad";
         if (age >= 18 && up == "firozabad") {
             System.out.println("person is eligible voting in firozabad");
         } else {

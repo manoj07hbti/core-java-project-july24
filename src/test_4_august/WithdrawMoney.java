@@ -3,7 +3,7 @@ package test_4_august;
 public class WithdrawMoney {
     public static void main(String[] args) {
 
-        double balance = 15000;
+        double balance = 0;
 
         if(balance >0){   // if balance is > 0
 

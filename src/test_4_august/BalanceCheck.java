@@ -4,7 +4,7 @@ public class BalanceCheck {
 
     public static void main(String[] args) {
 
-        double balance = 9500;
+        double balance = 12000;
 
         if(balance > 0 ){
 

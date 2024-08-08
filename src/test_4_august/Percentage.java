@@ -16,48 +16,6 @@ public class Percentage {
 
         System.out.println("Student is not clear exam second div");
     }
-    // que 02  true && false = false
-
-    number = 55;
-
-        if (number >= 33 && number == 60) {
-
-        System.out.println("Student clear exam second div.....");
-    } else {
-
-        System.out.println("Student is not clear exam second div.....");
-    }
-
-    // que 03 false && true =false
-
-    number = 20;
-
-        if (number >= 33 && number == 60){
-
-        System.out.println("Student clear exam second div.....");
-
-    } else {
-
-        System.out.println("Student is not clear exam second div.....");
-    }
-
-    // que 04 fale && false = false
-
-    number = 40;
-
-        if (number >= 33 && number== 60){
-
-        System.out.println("Student clear exam second div.....");
-
-    } else {
-
-            System.out.println("Student is not clear exam second div.....");
-        }
-
-
-
-
-
         // 01 true && true = true
 
          number= 73;

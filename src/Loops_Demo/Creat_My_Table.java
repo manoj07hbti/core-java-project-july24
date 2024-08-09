@@ -10,8 +10,6 @@ public class Creat_My_Table {
 
         int number = 5;
 
-        System.out.println("enter the numbe of multipli table 5 ");
-
         for(int k=1; k< 11; k++) {
 
             System.out.println( 5 + " * " + k + " = " + (5 * k ) );

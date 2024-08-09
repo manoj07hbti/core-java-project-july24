@@ -1,4 +1,4 @@
-package Loops_Demo;
+package All_Loops;
 
 public class Even_and_Odd_number {
 

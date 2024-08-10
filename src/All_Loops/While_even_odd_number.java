@@ -9,17 +9,14 @@ public class While_even_odd_number {
         //			                  increment/decrement;
         //                         }
 
-
         // print even numbers 1 to 100
 
-
-        // print even numbers 1 to 100
-
-        int i = 2;
+        int i = 1;
 
         while (i <= 100) {
 
             if (i % 2 == 0)
+
                 System.out.println(i + "");
             i++;
 
@@ -27,13 +24,14 @@ public class While_even_odd_number {
 
         // print odd numbers 1 to 100
 
-          i=2;
-            while(i<=100) {
-            if (i % 2 != 0) {
-                System.out.println(i + "");
-                i++;
+        int j=1;
+        while(j<=100) {
+            if (j % 2 != 0) {
+                System.out.println(j + "");
+                j++;
             }
         }
+
 
 
     }

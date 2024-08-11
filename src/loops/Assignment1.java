@@ -22,7 +22,7 @@ public class Assignment1 {
             }
         }
 
-        //2- Print all odd number between 1 and 100
+        //3- Print all odd number between 1 and 100
         System.out.println("odd numbers between 1 and 100 are:");
 
         for(int i=1;i<=100;i++){

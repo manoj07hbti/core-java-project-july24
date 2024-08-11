@@ -49,6 +49,31 @@ public class IfCondition {
         if(height<6){
             System.out.println("NOT TALL");
         }
+        //Checking Clearance
+        marks=2;
+        if(marks>60){
+            System.out.println("first division: "+marks);
+        }
+        if(marks<33){
+            System.out.println("Not cleared:"+ marks);
+        }
+        //Checking cost
+        double price=245.325;
+        if(price>5000){
+            System.out.println("Product is costly:"+price);
+        }
+        if(price<5000){
+            System.out.println("Product not costly:"+price);
+        }
+
+        country="India";
+        if(country =="India"){
+            System.out.println("INDIAN");
+        }
+        if(country != "India"){
+            System.out.println("NON INDIAN");
+        }
+
 
     }
 

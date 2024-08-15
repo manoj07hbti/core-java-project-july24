@@ -4,7 +4,11 @@ public class EvenNumberClass {
 
     public static void main(String[] args) {
 
-        //4)write a code to print even number between 1 to 100
+        //1)write a code to print even number between 1 to 100
+
+        //SYNTAX:   for (start_condition; conditional_expression; increment){
+//                 //CODE
+//              }
 
         for(int i=1; i<=100; i++) {
             if (i % 2 == 0) {

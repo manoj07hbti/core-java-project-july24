@@ -5,7 +5,7 @@ public class EvenOddClass {
 
     public static void main(String[] args) {
 
-        //1)write a code to check even and odd number between 3 to 300
+        //2)write a code to check even and odd number between 3 to 300
 
         for(int m=3; m<=300; m++){
             if (m % 2 == 0) {
@@ -17,8 +17,8 @@ public class EvenOddClass {
         }
 
 
-        //2nd method----> if random number checked
-        //1)write a code to check even and odd number between 3 to 300
+        //2nd method----> if we check random number
+        //2)write a code to check even and odd number between 3 to 300
 
            int i=78;
             if (i % 2 == 0) {

@@ -4,35 +4,38 @@ public class PatternClass {
 
     public static void main(String[] args) {
 
-        //6)write a program to print
-        // *
-        // **
-        //  ***
-        //  ****
-        //  *****
+        //4)write a program to print
+        // *               -------->rows
+        // **              .  columns
+        // ***             .
+        // ****            .
+        // *****           .
 
-        for(int i=1; i<=5; i++){
-          for(int j=1; j<=i; j++){
+        //dry run
+        //i=1--> j=1--->print * ---> next line---i=2....so on
+
+        for(int i=1; i<=5; i++){    //columns
+          for(int j=1; j<=i; j++){    //rows
               System.out.print("*");
           }
             System.out.println();
         }
 
-        //7)write a program to print
+        //5)write a program to print
         // 1
        //  12
         // 123
      //    1234
      //    12345
 
-        for(int n=1; n<=5; n++){
-            for(int m=1; m<=n; m++){
+        for(int n=1; n<=5; n++){      //columns
+            for(int m=1; m<=n; m++){   //rows
                 System.out.print(m);
             }
             System.out.println();
         }
 
-        //8)write a program to print
+        //6)write a program to print
         //*              .
         //**             .     part1
         //***            .
@@ -52,7 +55,7 @@ public class PatternClass {
             System.out.println();
         }
 
-        //9)write a program tp print
+        //7)write a program tp print
         //-3
         //-2
         //-1

@@ -5,7 +5,7 @@ public class VoterClass {
     public static void main(String[] args) {
 
 
-        //2)write a code to check eligible voter in pune
+        //9)write a code to check eligible voter in pune
 
         int age=23;
         String city="pune";

@@ -9,7 +9,7 @@ public class Check_percentage {
         // percentage check
 
         int number=500;
-        int percent=5;
+        int percent=55;
         int result= (int)(number*percent)/100;
         System.out.println("PERCENTAGE OF PERSON.." +result);
 

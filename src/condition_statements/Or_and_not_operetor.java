@@ -74,9 +74,6 @@ public class Or_and_not_operetor {
 
 
 
-     // WRITE A CODE TO CHECK AGE GROUP
-        //age>0 and age<40 : child
-
 
 
 

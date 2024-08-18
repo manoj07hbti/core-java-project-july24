@@ -9,7 +9,7 @@ public class PercentageFinder
 
         int result = (total * percentage)/100;
 
-        System.out.println("5% of 500 is equals to "+ result);
+        System.out.println(percentage+"% of "+total+" is equals to "+result);
 
     }
 }

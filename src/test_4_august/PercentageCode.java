@@ -1,6 +1,6 @@
 package test_4_august;
 
-public class VariableIfAndElseTest {
+public class PercentageCode {
 
     public static void main(String[] args) {
 

@@ -50,6 +50,41 @@ public class Demo2_Array {
           h++;
       } while(h<= city.length);
 
+//=====================================================================================================================
+
+
+        // int array distance
+        //SYNTAX : Datatype varName [] = {value1, value2,value3.......value N};
+
+        // with advanced loop
+
+      int distance []= {500, 1000, 1500, 2000, 2500, 3000};{
+            System.out.println("printing data distance");
+
+            for(int mannu: distance){
+                System.out.println("printing distance....."+mannu);
+
+        }
+
+         // with for loop
+
+            for(int m=0; m<=5; m++){
+                System.out.println("printing for loop..."+distance[m]);
+            }
+
+          // while loop
+            int m=0;
+            while (m<distance.length){
+                System.out.println("printing with while loop....."+distance[m]);
+                m++;
+            }
+
+         // with do while loop
+
+            do{
+                System.out.println("printing with do while loop----"+distance);
+                h++;
+            } while(m< distance.length);
 
 
 
@@ -60,3 +95,5 @@ public class Demo2_Array {
 
     }
 }
+}
+

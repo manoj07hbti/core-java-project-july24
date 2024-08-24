@@ -16,12 +16,14 @@ public class Int_Array {
         int j = 0;
         while (j < distance.length) {
             System.out.println("Printing using while loop.." + distance[j]);
+            j++;
         }
-        int l = 4;
+        int l = 3;
         do {
-            System.out.println("Pirnting using do while loop..." + distance[l]);
-        } while (l <= 4);
-
+            System.out.println("Pirnting using do while loop..." +distance+l);
+            break;
+        } while (l < 3);
+         l--;
         // advanced for loops
 
         for (int var : distance) {

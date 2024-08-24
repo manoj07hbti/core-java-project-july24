@@ -13,13 +13,13 @@ public class String_Array {
 
         System.out.println("print country..." + country[2]);
         //  for loop
-        for (int i = 0; i <= country.length; i++) {
+        for (int i = 0; i < country.length; i++) {
             System.out.println("print loop country name.. " + country[i]);
         }
        // while loop
 
         int l=0;
-        while(l<=country.length){
+        while(l<country.length){
             System.out.println("print using while loop.."+country [l]);
             l++;
         }

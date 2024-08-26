@@ -11,6 +11,7 @@ public class Find_Maximum_Element {
             if (num == 5) {
                 System.out.println("FIND 5 ELEMENT..." + i);
                 i++;
+            }
         }
     }
-}}
+}

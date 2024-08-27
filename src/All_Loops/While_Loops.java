@@ -17,10 +17,6 @@ public class While_Loops {
 
             i++;
         }
-
-
-
-
-
+        
     }
 }

@@ -5,7 +5,7 @@ public class Binary_search {
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 3, 4, 5, 6, 36, 40, 87};
-        int element = 3;
+        int element = 5;
 
         int Start = 0;
 

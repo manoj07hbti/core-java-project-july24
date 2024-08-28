@@ -6,7 +6,7 @@ public class Binary_Search {
     public static void main(String[] args) {
 
         int array[] = {2, 4, 5, 7, 8, 9, 10, 20, 30, 40, 60, 70};
-        int element = 30;
+        int element = 70;
 
         int start = 0;
         int end = array.length - 1;

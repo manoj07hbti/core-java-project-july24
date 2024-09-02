@@ -4,19 +4,25 @@ public class PrimeNumbersChecking
 {
     public static void main(String[] args)
     {
-        int number = 1;  // Change this number to check if it's prime
-        int count = 0;
+        int Value;
+        int Count;
 
-        for (int i = 1; i <= number; i++) {
-            if (number % i == 0) {
-                count++;
+        // Change this number to check if it's prime
+        Value= 1;
+        Count= 0;
+
+        for (int i = 1; i <= Value; i++) {
+            if (Value % i == 0) {
+                Count++;
             }
         }
 
-        if (count == 2) {
-            System.out.println(number + " is a prime number");
-        } else {
-            System.out.println(number + " is not a prime number");
+        if (Count == 2)
+        {
+            System.out.println(Value+ " is a prime number");
+        }else
+        {
+            System.out.println(Value+ " is not a prime number");
         }
 
     }

@@ -2,8 +2,8 @@ package conditional_statements;
 
 public class SwitchAndBreak {
 
-    public static void main(String[] args) {
-        int Month = 11;
+     public static void main(String[] args) {
+        int Month = 19;
 
         switch (Month) {
             case 1:

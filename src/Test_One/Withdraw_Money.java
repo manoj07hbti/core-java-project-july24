@@ -8,7 +8,7 @@ public class Withdraw_Money
         int AmountLimit =10000;
 
         //A code to withdrawing amount of the user
-        Amount=10000;
+        Amount=0;
         if(Amount>0 && Amount%100 ==0)
         {
             if(Amount<= 10000)

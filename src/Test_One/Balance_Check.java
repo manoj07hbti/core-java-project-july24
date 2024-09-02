@@ -8,7 +8,7 @@ public class Balance_Check
 
         //To check user's balance is more than 0
 
-        UserBalance = 12000;
+        UserBalance = 2000;
         if(UserBalance> 0)
         {
             System.out.println("The balance is more than 0...."+UserBalance);

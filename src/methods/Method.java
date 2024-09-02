@@ -4,11 +4,11 @@ public class Method {
 
     //SYNTAX : access_specifier return_type  method_name (parameter) {CODE..}
 
-    public void Squaremak(){
+    public void Squaremak() {
 
-        int i=85;
+        int i = 1000;
 
-        System.out.println("Square of given number: "+ i*i);
+        System.out.println("Square of given number: " + i * i);
 
     }
 
@@ -16,7 +16,7 @@ public class Method {
 
         // STEM 1: CreateObject Using default Contractor
 
-        Method object1= new Method();
+        Method object1 = new Method();
 
         object1.Squaremak();
 
@@ -24,7 +24,7 @@ public class Method {
     }
 
 
-
-
-
 }
+
+
+

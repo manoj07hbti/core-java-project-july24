@@ -1,6 +1,6 @@
 package methods.input_parameters;
 
-public class AssignmentDay2 {
+public class AssignmentDay3 {
 
     public void getCube(int num){
         System.out.println("cube of " +num +" is: " +num*num*num);
@@ -33,11 +33,9 @@ public class AssignmentDay2 {
         System.out.println(percent +"% of "+num +" is: " +result);
     }
 
-
-
     public static void main(String[] args) {
 
-        AssignmentDay2 obj = new AssignmentDay2();
+        AssignmentDay3 obj = new AssignmentDay3();
         obj.getCube(4);
         obj.checkPrime(7);
         obj.getFactorial(5);

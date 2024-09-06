@@ -31,6 +31,17 @@ public class MethodReturnType {
 
     }
 
+    public String evenOrOdd(int number){
+       String result="";
+       if(number%2==0){
+         result="Given number is Even Number..."+number;
+       }else
+       {
+           result="Given number is Odd Number..."+number;
+       }
+
+       return result;
+    }
 
     public static void main(String[] args) {
 
@@ -58,7 +69,11 @@ public class MethodReturnType {
             System.out.println("Not Eligible for voting in AGRA");
         }
 
+        System.out.println(obj.evenOrOdd(24));
+
+
     }
+
 
 
 }

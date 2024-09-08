@@ -5,25 +5,29 @@ public class MethodReturntype {
 
     //1)write a method for even odd by using method return type
 
-    public boolean evenodd (int num){
+    public String evenodd (int num){
 
+        String result ="";
       if(num%2==0){
-          return true;
+       result="given number is even:"+num;
       }
       else{
-          return false;
+          result="given number is odd:"+num;
       }
+      return result;
     }
 
     //2)write a method for factorial by using method return type
 
-    public int facto (int a){
-
+    public String facto (int a){
+       String result=" ";
        int  factorial=1;
         for(int i=a; i>1; i--) {
             factorial = factorial * i;
+          result="factorial of"+" "+ a +" "+"is :"+ factorial;
+
         }
-        return factorial;
+        return result;
     }
 
     //3)write a method for prime number by using method return type
@@ -72,27 +76,17 @@ public class MethodReturntype {
     public static void main(String[] args) {
 
         MethodReturntype obj = new MethodReturntype();
-        boolean result = obj.evenodd(20);
-        System.out.println(result);
-        if (result) {
-            System.out.println("even number");
-        } else {
-            System.out.println("odd number");
-        }
 
-        result = obj.evenodd(13);
-        System.out.println(result);
-        if (result) {
-            System.out.println("even number");
-        } else {
-            System.out.println("odd number");
-        }
+        System.out.println(obj.evenodd(20));
 
-        int f = obj.facto(5);
-        System.out.println(f);
+        System.out.println(obj.evenodd(13));
 
-        f = obj.facto(4);
-        System.out.println(f);
+
+
+        System.out.println(obj.facto(5));
+        System.out.println(obj.facto(4));
+
+
 
         boolean find = obj.prime(13);
         System.out.println(find);

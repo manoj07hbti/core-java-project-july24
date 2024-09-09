@@ -6,7 +6,7 @@ public class CheckNumber8To160 {
 
     public void checkNumber(){
         for(int i=8; i<=160;i++){
-            if(i%11!=0 && i%2==0){
+            if(i%11==0 && i%2==0){
                 System.out.println(i);
             }
         }

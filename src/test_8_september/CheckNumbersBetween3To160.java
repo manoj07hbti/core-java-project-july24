@@ -5,7 +5,7 @@ public class CheckNumbersBetween3To160 {
 
     public void checkNumber() {
         for (int i = 3; i <= 160; i++) {
-            if (i % 9 != 0 && i % 2 == 0) {
+            if (i % 9 == 0 && i % 2 == 0) {
                 System.out.println(i);
             }
         }

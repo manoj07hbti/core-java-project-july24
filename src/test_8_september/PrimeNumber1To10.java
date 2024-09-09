@@ -19,7 +19,7 @@ public class PrimeNumber1To10 {
 
     public static void main(String[] args) {
         PrimeNumber1To10 obj = new PrimeNumber1To10();
-        boolean isPrime = obj.checkPrime(6);
+        boolean isPrime = obj.checkPrime(5);
         System.out.println(isPrime);
         if (isPrime) {
             System.out.println("Number is prime...");

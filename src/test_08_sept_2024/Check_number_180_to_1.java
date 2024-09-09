@@ -14,9 +14,9 @@ public class Check_number_180_to_1 {
 
     public static void main(String[] args) {
 
-        newNumber obj = new newNumber();
+        Check_number_180_to_1 obj = new Check_number_180_to_1();
 
-           obj.number();
+           obj.newNumber();
 
 
 

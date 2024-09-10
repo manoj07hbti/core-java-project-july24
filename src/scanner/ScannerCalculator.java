@@ -48,26 +48,37 @@ public class ScannerCalculator {
     }
 
     public static void main(String[] args) {
-        System.out.println("Welcome to calculator app... Please ente your choice 1: Addtion 2: SUbstraction 3: Multiolication 4: Division");
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
 
-        ScannerCalculator obj = new ScannerCalculator();
+        String rechoice = "Y";
+        while (rechoice.equals("Y")) {
+            System.out.println("Welcome to calculator app... Please ente your choice 1: Addtion 2: SUbstraction 3: Multiolication 4: Division");
+            Scanner scanner = new Scanner(System.in);
+            int choice = scanner.nextInt();
 
-        if (choice == 1) {
-            System.out.println("printing addition");
-        } else if (choice == 2) {
-            System.out.println("printing substraction");
-        } else if (choice == 3) {
-            System.out.println("Printing multiplication");
-        } else if (choice == 4) {
-            System.out.println("Printing division");
-        } else {
-            System.out.println("Not found values..");
+            ScannerCalculator obj = new ScannerCalculator();
+
+            if (choice == 1) {
+                System.out.println(obj.checkAddition());
+            } else if (choice == 2) {
+                System.out.println(obj.checkSubstraction());
+            } else if (choice == 3) {
+                System.out.println(obj.checkMultiplication());
+            } else if (choice == 4) {
+                System.out.println(obj.checkDivision());
+            } else {
+                System.out.println("Not found values..");
+            }
         }
+
+        System.out.println("Do you want to continue press Y and not press N");
+        Scanner scanner_1 = new Scanner(System.in);
+        rechoice = scanner_1.nextLine();
     }
 
 }
+
+
+
 
 
 

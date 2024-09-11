@@ -3,7 +3,6 @@ package test_8_september;
 public class MethordFactorial {
 
 
-    public class Factorial {
 
         public int checkFactorial(int number) {
             int factorial = 1;
@@ -13,11 +12,11 @@ public class MethordFactorial {
             return factorial;
         }
 
-    }
+
         public static void main(String[] args) {
             MethordFactorial obj = new MethordFactorial();
-           obj.Factorial();
-
+           int result=obj .checkFactorial (5);
+           System.out.println("facturil given number"+result);
         }
 
 

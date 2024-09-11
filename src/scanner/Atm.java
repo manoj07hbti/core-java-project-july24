@@ -10,6 +10,13 @@ public class Atm {
         String name = scanner.nextLine();
         System.out.println("Welcome to SBI bank ATM..");
 
+        int pinnumber = 3265;
+        if (pinnumber == 3265) {
+            System.out.println("please enter your valid pin");
+
+            Scanner scanner2 = new Scanner(System.in);
+            pinnumber = scanner2.nextInt();
+        }
         int balance = 100000, withdraw, deposit;
         Scanner scanner1 = new Scanner(System.in);
         while (true) {

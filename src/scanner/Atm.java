@@ -12,10 +12,11 @@ public class Atm {
         if (withdraw % 100 == 0 && balance >= withdraw) {
             balance = balance - withdraw;
             System.out.println("Please collect your money: " + withdraw);
-            System.out.println("Balance "+balance);
+            System.out.println("Balance " + balance);
         } else {
             System.out.println("Insufficient balance / Invalid amount..please enter correct value");
-        }return "";
+        }
+        return "";
     }
 
     public String CashDeposit() {
@@ -28,6 +29,7 @@ public class Atm {
     }
 
     public String BalanceCheck() {
+
         return "Balance: " + balance;
     }
 

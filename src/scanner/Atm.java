@@ -12,10 +12,10 @@ public class Atm {
         if (withdraw % 100 == 0 && balance >= withdraw) {
             balance = balance - withdraw;
             System.out.println("Please collect your money: " + withdraw);
+            System.out.println("Balance "+balance);
         } else {
             System.out.println("Insufficient balance / Invalid amount..please enter correct value");
-        }
-        return "Balance: " + balance;
+        }return "";
     }
 
     public String CashDeposit() {
@@ -43,8 +43,11 @@ public class Atm {
             System.out.println("Please Enter your Pin");
             Scanner Pin = new Scanner(System.in);
             int pin = Pin.nextInt();
-            if (pin == 3333) {
-                System.out.println("1.Cash Withdraw  2.Cash Deposit  3.Balance Check 4.Exit");
+            if (pin == 1234) {
+                System.out.println("1.Cash Withdraw " +
+                        "           2.Cash Deposit  " +
+                        "           3.Balance Check " +
+                        "           4.Exit");
             } else {
                 System.out.println("Invalid PIN");
             }

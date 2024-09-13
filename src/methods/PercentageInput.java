@@ -8,5 +8,8 @@ public class PercentageInput {
     public static void main(String[] args) {
         PercentageInput percentage=new PercentageInput();
         percentage.percentage(1597,15);
+        percentage.percentage(4568,9);
+        percentage.percentage(1597,6);
+                
     }
 }

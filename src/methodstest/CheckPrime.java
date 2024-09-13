@@ -8,13 +8,12 @@ public class CheckPrime {
                 if (number % i == 0) {
                     isPrime = false;
                     return "Not Prime: " + number;
-                } else {
-                }
-                return "Prime: " + number;
+                }else{
+                    return "Prime: " + number;}
+
             }
-        } else {
-        }
-        return "Invalid Number";
+        }return "Invalid Number";
+        
     }
 
     public String prime(int number) {
@@ -24,11 +23,9 @@ public class CheckPrime {
                 if (number % i == 0) {
                     isPrime = false;
                     return "Not Prime: " + number;
-                } else {
                 }
                 return "Prime: " + number;
             }
-        } else {
         }
         return "Invalid Number";
     }
@@ -36,9 +33,9 @@ public class CheckPrime {
 
     public static void main(String[] args) {
         CheckPrime prime = new CheckPrime();
-        String p = prime.Prime(11);
+        String p = prime.Prime(8);
         System.out.println(p);
-        String p2 = prime.prime(12);
+        String p2 = prime.prime(13);
         System.out.println(p2);
     }
 }

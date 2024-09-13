@@ -1,8 +1,9 @@
-package methods;
+package git;
 
 public class CalculatorInput {
-    public void add(int a, int b){
+    public int add(int a, int b){
         System.out.println("Add: "+(a+b));
+        return a;
     }
     public void Subtract(int a, int b){
         System.out.println("Subtract: "+(a-b));

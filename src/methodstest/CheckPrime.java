@@ -7,13 +7,18 @@ public class CheckPrime {
             for (int i = 2; i < number; i++) {
                 if (number % i == 0) {
                     isPrime = false;
-                    return "Not Prime: " + number;
+
+                    System.out.println("Not Prime: " + number);
+                    break;
                 }else{
-                    return "Prime: " + number;}
+                    System.out.println("Prime: " + number);
+                    break;
+                }
 
             }
-        }return "Invalid Number";
-        
+        }else {
+            System.out.println("Invalid Number");
+        }return "";
     }
 
     public String prime(int number) {
@@ -22,12 +27,15 @@ public class CheckPrime {
             for (int i = 2; i < number; i++) {
                 if (number % i == 0) {
                     isPrime = false;
-                    return "Not Prime: " + number;
+                    System.out.println("Not Prime: " + number);
+                    break;
                 }
-                return "Prime: " + number;
+                System.out.println("Prime: " + number);
+                break;
             }
-        }
-        return "Invalid Number";
+        }else {
+            System.out.println("Invalid Number");
+        }return "";
     }
 
 

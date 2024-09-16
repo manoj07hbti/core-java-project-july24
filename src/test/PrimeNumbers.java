@@ -2,13 +2,14 @@ package test;
 
 public class PrimeNumbers {
     public static void main(String[] args) {
-        for (int number = 15; number <= 30; number++) {
             boolean isPrime = true;
+            int number=15;
 
             for (int i = 2; i < number; i++) {
                 if (number % i == 0) {
                     System.out.println("not prime because divisible by: " + i);
                     isPrime = false;
+                    break;
 
 
                 }
@@ -21,4 +22,3 @@ public class PrimeNumbers {
             }
         }
     }
-}

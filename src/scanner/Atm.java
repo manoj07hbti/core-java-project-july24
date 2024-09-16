@@ -39,10 +39,11 @@ public class Atm {
     }
 
     public static void main(String[] args) {
-        String choice1 = "Y";
-        while (choice1.equals("Y")) {
+
             System.out.println("Welcome to XYZ Bank.");
             System.out.println("Please Enter your Pin");
+        String choice1 = "Y";
+        while (choice1.equals("Y")) {
             Scanner Pin = new Scanner(System.in);
             int pin = Pin.nextInt();
             if (pin == 1234) {

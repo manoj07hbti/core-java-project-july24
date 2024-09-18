@@ -1,4 +1,4 @@
-package collection;
+package collection.list;
 
 import java.util.ArrayList;
 
@@ -18,6 +18,10 @@ public class DemoList {
            cities.add("Mumbai");// 2 index
            cities.add("Kanpur");// 3 index
            cities.add("Jaipur"); // 4 index
+           cities.add(123);
+           cities.add(3432.2432);
+           cities.add(false);
+           cities.add('A');
         // reading data from list : obj.get(INDEX)
         System.out.println(cities.get(3));
 
@@ -32,6 +36,13 @@ public class DemoList {
         for(int i=0; i<cities.size(); i++){
 
             System.out.println("After delete Printing list :" +cities.get(i) +" at Index: "+i);
+        }
+
+        //Advanced for loop  for(Datatype var: collection/Array) { }
+        int i=0;
+        for(Object var: cities){
+            System.out.println("Printing in Advanced loop: "+var +" at index : "+i);
+            i++;
         }
 
     }

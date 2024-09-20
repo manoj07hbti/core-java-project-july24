@@ -63,6 +63,42 @@ public class NestedIf {
         }
 
 
+        number=18;
+        if(number>0){
+            if(number%2==0){
+                System.out.println("ODD NUMBER...");
+            }else{
+                System.out.println("Even number..");
+            }
+        }
+
+        number=110;
+        if(number>0){
+            if(number%5==0){
+                System.out.println("Even number...");
+            } else{
+                System.out.println("ODD NUMBER...");
+            }
+        }
+
+        number=-50;
+        if(number<0){
+            if(number%2==0){
+                System.out.println("Negative odd number...");
+            } else{
+                System.out.println("Even number..");
+            }
+        }
+
+        number=200;
+        if(number>0){
+            if(number%5==0){
+                System.out.println("Even number...");
+            } else{
+                System.out.println("ODD NUMBER..");
+            }
+        }
+
 
         }
 

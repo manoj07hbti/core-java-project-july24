@@ -5,7 +5,7 @@ public class ifAndElse_Assigenment {
     public static void main(String[] args) {
 
 
-        int age=26;
+        int age=21;
         if(age>18){
             System.out.println("Eligible for voting.."+age);
         } else{
@@ -38,6 +38,13 @@ public class ifAndElse_Assigenment {
             System.out.println("INDIAN...");
         } else{
             System.out.println("NoN INDIAN..."+country);
+        }
+
+        age= 25;
+        if(age>18){
+            System.out.println("Eligible...");
+        } else{
+            System.out.println("Not eligble...");
         }
 
 

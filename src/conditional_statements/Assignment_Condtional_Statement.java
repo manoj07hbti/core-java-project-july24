@@ -10,10 +10,10 @@ public class Assignment_Condtional_Statement {
             System.out.println("WELCOME TO VOTING SYSTEM : "+age);
 
         }
-        int age1=17;
-        if(age1<18){
+         age=17;
+        if(age>18){
             System.out.println("Person is not eligible for voting ");
-            System.out.println("Person is not eligible for voting : "+age1);
+            System.out.println("Person is not eligible for voting : "+age);
         }
 
         int marks=50;

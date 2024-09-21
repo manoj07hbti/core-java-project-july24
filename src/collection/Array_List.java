@@ -10,13 +10,7 @@ public class Array_List {
         ArrayList name = new ArrayList();
 
         name.add("rashmi"); //0
-        name.add("rahul"); //1
-        name.add("anshul"); //2
-        name.add("bashu"); //3
-        name.add("inaaya"); //4
-        name.add("nelu"); //5
-        name.add("rubi");  //6
-        name.add("");  //7
+
 
         // reading data from list : obj.get(INDEX)
 

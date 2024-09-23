@@ -2,10 +2,7 @@ package model;
 
 public class Student {
 
-
-
-    public class Student {
-        String name;
+    String name;
         int age;
         String section;
         // parametrized constructor
@@ -13,8 +10,14 @@ public class Student {
             this.name = name;
             this.age = age;
             this.section = section;
+
+
         }
+
+
         // getter setter
+
+
         public String getName() {
             return name;
         }
@@ -35,4 +38,4 @@ public class Student {
         }
     }
 
-}
+

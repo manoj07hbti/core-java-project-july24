@@ -16,16 +16,22 @@ public class EmployeeArrayList {
 
 
         for (int i = 0; i < numberOfEmployees; i++) {
+            Scanner scanner1 = new Scanner(System.in);
+
             System.out.println("Enter detail of employess..." + i);
 
             System.out.print("Name...");
-            String name = scanner.nextLine();
+            String name = scanner1.nextLine();
 
             System.out.print("Age...");
             int age = scanner.nextInt();
+            Scanner scanner2 = new Scanner(System.in);
 
             System.out.print("department..");
-            String department = scanner.nextLine();
+            String department = scanner2.nextLine();
+
+            Employee employee = new Employee(name, age, department);
+            employeeArrayList.add(employee);
         }
         return employeeArrayList;
     }
@@ -35,7 +41,7 @@ public class EmployeeArrayList {
         EmployeeArrayList obj = new EmployeeArrayList();
 
         for (Employee var : obj.createEmployeeList()) {
-            System.out.println("Printing using loop..." + var.getName() + "Age.." + var.getAge() + "Department  " + var.getDepartment());
+            System.out.println("Printing Name... " + var.getName() + " Age.." + var.getAge() + " Department  " + var.getDepartment());
 
         }
     }

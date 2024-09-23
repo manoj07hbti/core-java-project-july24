@@ -15,16 +15,22 @@ public class StudentArrayList {
         scanner.nextLine();
 
         for (int i = 0; i < numberOfStudents; i++) {
+
+            Scanner scanner1 = new Scanner(System.in);
             System.out.println("Enter detail of students..." + i);
 
             System.out.print("Name...");
-            String name = scanner.nextLine();
+            String name = scanner1.nextLine();
 
             System.out.print("Age..");
             int age = scanner.nextInt();
-
+            Scanner scanner2 = new Scanner(System.in);
             System.out.print("Section...");
-            String section = scanner.nextLine();
+            String section = scanner2.nextLine();
+
+
+            Student student = new Student(name, age, section);
+            studentArrayList.add(student);
         }
 
         return studentArrayList;

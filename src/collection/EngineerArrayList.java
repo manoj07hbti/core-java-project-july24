@@ -5,8 +5,6 @@ import model.Engineer;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static sun.plugin2.os.windows.OSVERSIONINFOA.size;
-
 public class EngineerArrayList {
 
         public ArrayList<Engineer> createEngineer(){
@@ -47,7 +45,7 @@ public class EngineerArrayList {
 
             ArrayList<Engineer> engineer= obj.createEngineer();
             System.out.println("USING FOR LOOP");
-            for(int i=0; i<size(); i++){
+            for(int i=0; i< engineer.size(); i++){
 
             }
             System.out.println("USING WHILE LOOP");

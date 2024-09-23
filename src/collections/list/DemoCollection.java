@@ -1,4 +1,4 @@
-package collections;
+package collections.list;
 
 import java.lang.reflect.Array;
 import java.sql.SQLOutput;
@@ -8,7 +8,7 @@ public class DemoCollection {
 
     public static void main(String[] args) {
 
-        // I want to store 10 country names
+        // I want to store country names
 
         // Array List
 
@@ -32,7 +32,7 @@ public class DemoCollection {
         // reading data from list : ojb.get(INDEX)
 
         System.out.println(country.get(9));
-        for (int i=0; i<country.size(); i++){
+        for (int i=0; i<12 ; i++){
             System.out.println("printing list.."+country.get(i)+":.index."+i);
 
         }

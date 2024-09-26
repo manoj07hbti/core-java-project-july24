@@ -32,8 +32,8 @@ public class IntegerHashSet {
     public static void main(String[] args) {
 
         IntegerHashSet object = new IntegerHashSet();
-        for (String var : object.createIntegerHashSet()) {
-            System.out.println("Printing Integer HashSet");
+        for (Integer var : object.createIntegerHashSet()) {
+            System.out.println("Printing Integer HashSet:"+var);
         }
 
 

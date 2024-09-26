@@ -1,7 +1,6 @@
-package collection;
+package collection.list;
 
 import model.Doctor;
-import model.Engineer;
 
 import java.util.ArrayList;
 import java.util.Scanner;

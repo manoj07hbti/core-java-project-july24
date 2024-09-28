@@ -9,7 +9,7 @@ public class DemoEngineerHashSet {
     public static void main(String[] args) {
         HashSet<Engineer> engineers = new HashSet<>();
 
-        Engineer engineer1 = new Engineer("rashmi", 31, "TUNDLA", "IT");
+        Engineer engineer1 = new Engineer("Rashmi", 31, "TUNDLA", "IT");
         System.out.println("HAshocde of engineer1...." + engineer1.hashCode());
 
 
@@ -17,7 +17,7 @@ public class DemoEngineerHashSet {
         System.out.println("Hashcode of engineer2..." + engineer2.hashCode());
 
 
-        Engineer engineer3 = new Engineer("ADEEBA", 25, "TUNDLA", "MBBS");
+        Engineer engineer3 = new Engineer("ADEEBA", 26, "TUNDLA", "MBBS");
         System.out.println("Hashcode os engineer3..." + engineer3.hashCode());
 
 

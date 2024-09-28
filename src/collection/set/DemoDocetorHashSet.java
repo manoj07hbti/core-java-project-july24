@@ -13,7 +13,7 @@ public class DemoDocetorHashSet {
 
     HashSet<Docetor> doctor = new HashSet<>();
 
-    Docetor doctor1 = new Docetor("rashmi", 31, "TUNDLA", "IT");
+    Docetor doctor1 = new Docetor("Rashmi", 31, "TUNDLA", "IT");
 
         System.out.println("HAshocde of docetor1...." + doctor1.hashCode());
 

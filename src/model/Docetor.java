@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Docetor {
 
     String name;
@@ -16,9 +18,24 @@ public class Docetor {
         this.age = age;
         this.speciality = speciality;
         this.degree = degree;
-
-
     }
+
+    // we need to provide implementation of hash code method by overriding hashcode method
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Docetor docetor = (Docetor) o;
+        return age == docetor.age && Objects.equals(name, docetor.name) && Objects.equals(speciality, docetor.speciality) && Objects.equals(degree, docetor.degree);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, speciality, degree);
+    }
+
+
     // getter setter
 
 

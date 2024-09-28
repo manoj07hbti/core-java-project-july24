@@ -1,4 +1,4 @@
-package Collection.List;
+package Collection.List.Set;
 
 import java.util.HashSet;
 
@@ -50,7 +50,7 @@ public class DemoHashSet {
 
             Scanner scanner1 = new Scanner(System.in);
 
-            System.out.println("please enter age:" + (i + 1) + ": ");
+            System.out.println("please enter age:" + (i + 1));
 
             System.out.println("AGE ");
 
@@ -78,8 +78,7 @@ public class DemoHashSet {
 
             Scanner scanner1 = new Scanner(System.in);
 
-            System.out.println("please enter  prize:" + (i + 1) + ": ");
-
+            System.out.println("please enter  prize:" + (i + 1) );
             double Prize = scanner1.nextDouble();
 
             prize.add(Prize);

@@ -5,6 +5,7 @@ package collection.set;
 import model.Student;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class StudentHashSet {
 
@@ -12,7 +13,7 @@ public class StudentHashSet {
 
     public static void main(String[] args) {
 
-        HashSet <Student> students= new HashSet();
+        LinkedHashSet<Student> students= new LinkedHashSet<>();
 
         Student student1= new Student("Rahul",21,"CS");
         System.out.println("hashcode of student1: "+student1.hashCode());

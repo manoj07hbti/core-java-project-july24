@@ -2,17 +2,17 @@ package Model;
 
 import java.util.Objects;
 
-public class Engineer
+public class Employee
 {
     String name;
     int age;
-    String field;
+    double salary;
 
-    public Engineer(String name, int age, String field)
+    public Employee(String name, int age, double salary)
     {
         this.name = name;
         this.age = age;
-        this.field = field;
+        this.salary = salary;
     }
 
     public String getName() {
@@ -31,24 +31,24 @@ public class Engineer
         this.age = age;
     }
 
-    public String getField() {
-        return field;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setField(String field) {
-        this.field = field;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Engineer engineer = (Engineer) o;
-        return age == engineer.age && Objects.equals(name, engineer.name) && Objects.equals(field, engineer.field);
+        Employee employee = (Employee) o;
+        return age == employee.age && Double.compare(salary, employee.salary) == 0 && Objects.equals(name, employee.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age, field);
+        return Objects.hash(name, age, salary);
     }
 }

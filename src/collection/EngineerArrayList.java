@@ -33,7 +33,7 @@ public class EngineerArrayList {
                 System.out.println("Branch");
                 String Branch=scanner2.nextLine();
 
-                Engineer engineer= new Engineer(name,age,Branch);
+                Engineer engineer= new Engineer(name,age,Branch, "MBBS");
                 engineerArrayList.add(engineer);
             }
 

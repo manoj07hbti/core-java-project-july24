@@ -12,7 +12,7 @@ public class Engineer {
     // param constructor
 
 
-    public Engineer(String name, int age, String city) {
+    public Engineer(String name, int age, String city, String mbbs) {
         this.name = name;
         this.age = age;
         this.city = city;

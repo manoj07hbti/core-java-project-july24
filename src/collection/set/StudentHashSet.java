@@ -36,13 +36,14 @@ public class StudentHashSet {
             Student student = new Student(name, age, section);
             Student.add(student);
 
-                Student student1 = new Student("rahul", 33, "CS");
-                Student student2 = new Student("rashmi", 31, "it");
-                Student student3 = new Student("rahul", 33, "CS");
+            Student student1 = new Student("rahul", 33, "CS");
 
-                Student.add(student1);
-                Student.add(student2);
-                Student.add(student3);
+            Student student2 = new Student("rashmi", 31, "it");
+            Student student3 = new Student("rahul", 33, "CS");
+
+            Student.add(student1);
+            Student.add(student2);
+            Student.add(student3);
 
         }
 

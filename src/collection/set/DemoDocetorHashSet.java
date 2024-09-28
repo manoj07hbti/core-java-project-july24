@@ -26,7 +26,7 @@ public class DemoDocetorHashSet {
         System.out.println("Hashcode os doctor3..." +docetor3.hashCode());
 
 
-    Docetor docetor4 = new Docetor("ADEEBA", 26, "TUNDLA", "MBBS");
+    Docetor docetor4 = new Docetor("meenu", 26, "TUNDLA", "MBBS");
         System.out.println("Hashcode of docetor4 " + docetor4.hashCode());
 
 

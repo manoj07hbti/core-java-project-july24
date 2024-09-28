@@ -17,23 +17,18 @@ public class PersonArrayList {
 
         int size = scanner.nextInt();
 
-        Scanner scanner1 = new Scanner(System.in);
 
+        Scanner scanner2= new Scanner(System.in);
         for (int i = 0; i < size; i++) {
+
             System.out.println("please enter name ");
-
-            String name = scanner1.nextLine();
-
+            String name = scanner2.nextLine();
             System.out.println("please enter age");
-
-            int age = scanner1.nextInt();
-
+            int age = scanner2.nextInt();
+            Scanner scanner3= new Scanner(System.in);
             System.out.println("please enter field");
-
-            String field = scanner1.nextLine();
-
+            String field = scanner2.nextLine();
             Person person = new Person(name, age, field);
-
             personArrayList.add(person);
         }
 
@@ -45,10 +40,14 @@ public class PersonArrayList {
 
         PersonArrayList obj = new PersonArrayList();
 
-        for (Person person : obj.createPersonList()) {
+        for (Person var : obj.createPersonList()) {
 
-            System.out.println("person name" + person.getName() + "age" + person.getAge() + "field" + person.getField());
+            System.out.println("person name" + var.getName() + "age" + var.getAge() + "field" + var.getField());
         }
+
+
+
+
     }
 
 }

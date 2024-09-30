@@ -1,6 +1,7 @@
 package collection.map;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class DemoHashMap {
 
@@ -27,6 +28,14 @@ public class DemoHashMap {
 
         System.out.println(courses);
 
+        //how to iterate map
+        // we need keys of map to display all elements in a loop...
+        // keySet() is a method which can give you all keys of a map
+      Set<Integer> keys =courses.keySet();
+
+          for(Integer var: keys){
+              System.out.println("printing Map using loop: "+courses.get(var));
+          }
 
     }
 }

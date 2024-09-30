@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Engineer {
     String name;
     int age;
@@ -9,6 +11,19 @@ public class Engineer {
         this.name = name;
         this.age = age;
         this.department = department;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Engineer engineer = (Engineer) o;
+        return age == engineer.age && Objects.equals(name, engineer.name) && Objects.equals(department, engineer.department);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, department);
     }
 
     public String getName() {

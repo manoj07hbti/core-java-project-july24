@@ -2,12 +2,12 @@ package model;
 
 import java.util.Objects;
 
-public class Doctor {
+public class Employee {
     String name;
     int age;
     String department;
 
-    public Doctor(String name, int age, String department) {
+    public Employee(String name, int age, String department) {
         this.name = name;
         this.age = age;
         this.department = department;
@@ -17,8 +17,8 @@ public class Doctor {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Doctor doctor = (Doctor) o;
-        return age == doctor.age && Objects.equals(name, doctor.name) && Objects.equals(department, doctor.department);
+        Employee employee = (Employee) o;
+        return age == employee.age && Objects.equals(name, employee.name) && Objects.equals(department, employee.department);
     }
 
     @Override

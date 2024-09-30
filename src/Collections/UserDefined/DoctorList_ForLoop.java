@@ -29,7 +29,7 @@ public class DoctorList_ForLoop
             System.out.println("Enter field here:");
             String field= scanner2.nextLine();
 
-            Doctor doctor= new Doctor(name, age, field);
+            Doctor doctor = new Doctor(name, age, field);
             doctorArrayList.add(doctor);
         }
         return doctorArrayList;
@@ -38,11 +38,11 @@ public class DoctorList_ForLoop
     public static void main(String[] args)
     {
         DoctorList_ForLoop obj= new DoctorList_ForLoop();
-        for (Doctor doctor: obj.createDoctorList())
+        for (Doctor doctor : obj.createDoctorList())
         {
-            System.out.println("Doctor's name: "+doctor.getName()+
-                    " Age: "+doctor.getAge()+
-                    " Field: "+doctor.getField());
+            System.out.println("Doctor's name: "+ doctor.getName()+
+                    " Age: "+ doctor.getAge()+
+                    " Field: "+ doctor.getField());
         }
     }
 }

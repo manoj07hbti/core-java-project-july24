@@ -50,16 +50,8 @@ public class EmployeeMap {
     public static void main(String[] args) {
         EmployeeMap obj = new EmployeeMap();
         obj.createEmployeeMap();
-
-
-        String choice = "Y";
-        while (choice.equals("Y")) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Do you want to continue press Y otherwise press any key to exit");
-            Scanner scanner1 = new Scanner(System.in);
-            choice = scanner1.nextLine();
-        }
     }
-
-
 }
+
+
+

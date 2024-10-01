@@ -1,6 +1,8 @@
 package collections.map;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class DemoHashMap {
 
@@ -34,8 +36,20 @@ public class DemoHashMap {
 
         DemoHashMap obj = new DemoHashMap();
 
-        obj.bookMap();
-        obj.carPrice();
+//        obj.bookMap();
+        HashMap<String, Double> cars=  obj.carPrice();
+
+        Set<String> keys = cars.keySet();
+
+        for(String var : keys){
+            System.out.println("Cars Data: "+cars.get(var));
+        }
+
+
+
+
+
+
 
 
     }

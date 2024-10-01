@@ -1,5 +1,7 @@
 package collections.map;
 
+import java.util.Set;
+
 public class HashMap {
 
     public java.util.HashMap<Integer, String> softwareDeveloper() {
@@ -12,7 +14,14 @@ public class HashMap {
 
         System.out.println(developer.get(3));
 
+        Set<Integer> develop = developer.keySet();
+
+        for (Integer var : develop) {
+            System.out.println("Printing using loops.." + developer.get(var));
+        }
+
         return developer;
+
     }
 
     public java.util.HashMap<String, String> cityMap() {
@@ -25,6 +34,12 @@ public class HashMap {
 
         System.out.println(cities.get("A"));
 
+        Set<String> city = cities.keySet();
+
+        for (String var : city) {
+            System.out.println("Printing using loops.." + cities.get(var));
+        }
+
         return cities;
     }
 
@@ -34,7 +49,6 @@ public class HashMap {
         HashMap obj = new HashMap();
         obj.softwareDeveloper();
         obj.cityMap();
-
 
     }
 

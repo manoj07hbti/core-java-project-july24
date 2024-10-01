@@ -1,6 +1,7 @@
 package collections.map;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class HashMapString {
 
@@ -32,6 +33,20 @@ public class HashMapString {
         //Using null;
         names.put(null, "ravan");
         System.out.println(names);
+
+
+        // how to iterate map
+        // we need to all key display in loop
+        // set method
+
+        Set <String> key= names.keySet();
+        for (String var: key){
+            System.out.println("printing map loop: " +names.get(var));
+        }
+
+
+
+
 
     }
 

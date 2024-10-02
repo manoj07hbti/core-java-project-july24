@@ -65,7 +65,7 @@ public class EmployeeDataMap
             ArrayList<Employee> employees= empMap.get(key);
             for (Employee employee: employees)
             {
-                System.out.println("Company Name: "+key+"|| Name: "+employee.getName()+", Age: "+employee.getAge()+" ,Salary (Monthly): "+employee.getSalary()+" Lacs (INR)");
+                System.out.println("Company Name: "+key+"| Name: "+employee.getName()+", Age: "+employee.getAge()+" ,Salary (Monthly): "+employee.getSalary()+" Lacs (INR)");
             }
         }
     }

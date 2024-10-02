@@ -1,6 +1,8 @@
 package Methods;
 
 public class Employee {
+    public Employee() {
+    }
 
     //data members
 

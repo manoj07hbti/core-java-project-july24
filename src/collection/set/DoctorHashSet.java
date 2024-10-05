@@ -3,11 +3,12 @@ package collection.set;
 import model.Doctor;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class DoctorHashSet {
-    public HashSet<Doctor> createDoctorList(){
-        HashSet<Doctor>doctors=new HashSet<>();
+    public LinkedHashSet<Doctor> createDoctorList(){
+        LinkedHashSet<Doctor>doctors=new LinkedHashSet<>();
         System.out.println("Please enter number of doctor's data to enter: ");
         Scanner scanner=new Scanner(System.in);
         int size=scanner.nextInt();

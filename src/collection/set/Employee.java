@@ -4,11 +4,12 @@ import model.Doctor;
 import model.Engineer;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Employee {
-    public HashSet<model.Employee> createEmployeeList(){
-        HashSet<model.Employee>employees=new HashSet<>();
+    public LinkedHashSet<model.Employee> createEmployeeList(){
+        LinkedHashSet<model.Employee>employees=new LinkedHashSet<>();
         System.out.println("Please enter number of employee's data to enter: ");
         Scanner scanner=new Scanner(System.in);
         int size=scanner.nextInt();
@@ -20,7 +21,7 @@ public class Employee {
             System.out.println("Please enter age of employee: ");
             int age=scanner2.nextInt();
             Scanner scanner3=new Scanner(System.in);
-            System.out.println("Please enter section of employee: ");
+            System.out.println("Please enter department of employee: ");
             String department=scanner3.nextLine();
             model.Employee employee=new model.Employee(name,age,department);
             employees.add(employee);

@@ -1,17 +1,17 @@
 package classes_and_object;
 
-public class Employee {
+public class DemoEmployee {
     String name = "Anshul";
     int empid = 4510;
     String department = "IT";
 
     public static void main(String[] args) {
 
-        Employee emp1 = new Employee();
-        Employee emp2 = new Employee();
-        Employee emp3 = new Employee();
-        Employee emp4 = new Employee();
-        Employee emp5 = new Employee();
+        DemoEmployee emp1 = new DemoEmployee();
+        DemoEmployee emp2 = new DemoEmployee();
+        DemoEmployee emp3 = new DemoEmployee();
+        DemoEmployee emp4 = new DemoEmployee();
+        DemoEmployee emp5 = new DemoEmployee();
 
         System.out.println("Name- "+emp1.name +" EmployeeId- "+emp1.empid +" Department- "+emp1.department );
         System.out.println("Name- "+emp2.name +" EmployeeId- "+emp2.empid +" Department- "+emp2.department );

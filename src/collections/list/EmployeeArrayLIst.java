@@ -1,13 +1,13 @@
 package collections.list;
-import model.Employee;
+import model.Employee2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EmployeeArrayLIst {
 
-    public ArrayList<Employee> createEmployeeList(){
+    public ArrayList<Employee2> createEmployeeList(){
         Scanner scanner= new Scanner(System.in);
-        ArrayList<Employee> employeeArrayList = new ArrayList<>();
+        ArrayList<Employee2> employee2ArrayList = new ArrayList<>();
 
         System.out.print("Enter the number of employees to add: ");
         int numberOfEmployees = scanner.nextInt();
@@ -28,11 +28,11 @@ public class EmployeeArrayLIst {
             System.out.print("Department: ");
             String department = scanner.nextLine();
 
-            Employee employee = new Employee(name, age, department);
-            employeeArrayList.add(employee);
+            Employee2 employee2 = new Employee2(name, age, department);
+            employee2ArrayList.add(employee2);
         }
 
-        return employeeArrayList;
+        return employee2ArrayList;
 
     }
 
@@ -40,7 +40,7 @@ public class EmployeeArrayLIst {
 
         EmployeeArrayLIst  obj = new EmployeeArrayLIst();
 
-        for(Employee var : obj.createEmployeeList()){
+        for(Employee2 var : obj.createEmployeeList()){
             System.out.println("Name: "+var.getName() + " EmployeeID: "+var.getEmployeeId() + " Department: " +var.getEmployeeId());
         }
 

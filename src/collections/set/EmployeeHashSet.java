@@ -1,26 +1,26 @@
 package collections.set;
 
-import model.Employee;
+import model.Employee2;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
 public class EmployeeHashSet {
 
-    public HashSet<Employee> createEmployeeSet(){
+    public HashSet<Employee2> createEmployeeSet(){
         Scanner sc = new Scanner(System.in);
 
-        HashSet<Employee> employees = new HashSet<>();
+        HashSet<Employee2> employee2s = new HashSet<>();
 
-        Employee e1= new Employee("Anshul",  1245 , "IT");
-        Employee e2= new Employee("Anshul",  1245 , "IT");
-        Employee e3= new Employee("Kunal",  4587 , "MBA");
+        Employee2 e1= new Employee2("Anshul",  1245 , "IT");
+        Employee2 e2= new Employee2("Anshul",  1245 , "IT");
+        Employee2 e3= new Employee2("Kunal",  4587 , "MBA");
 
-        employees.add(e1);
-        employees.add(e2);
-        employees.add(e3);
+        employee2s.add(e1);
+        employee2s.add(e2);
+        employee2s.add(e3);
 
-        return employees;
+        return employee2s;
 
     }
 
@@ -28,7 +28,7 @@ public class EmployeeHashSet {
 
         EmployeeHashSet obj = new EmployeeHashSet();
 
-        for(Employee var : obj.createEmployeeSet()){
+        for(Employee2 var : obj.createEmployeeSet()){
             System.out.println("Name: "+var.getName() +" Emp ID: "+var.getEmployeeId() + " Dept: "+var.getDepartment());
         }
 

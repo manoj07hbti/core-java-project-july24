@@ -1,6 +1,6 @@
 package methods;
 
-public class Employee {
+public class DemoEmployee {
 
     public void work(){
         System.out.println("THis is work method");
@@ -16,7 +16,7 @@ public class Employee {
 
     public static void main(String[] args) {
 
-        Employee obj = new Employee();
+        DemoEmployee obj = new DemoEmployee();
 
         obj.work();
         obj.eat();

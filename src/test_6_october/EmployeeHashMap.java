@@ -18,6 +18,7 @@ public class EmployeeHashMap {
         Scanner scanner1= new Scanner(System.in);
         for (int i = 0; i < number; i++) {
             System.out.println("Enter the details of Employee" + (i + 1));
+            Scanner scanner2= new Scanner(System.in);
             System.out.println("Enter the Name of Employees");
             String name = scanner.nextLine();
             System.out.println("Enter Employees Age");

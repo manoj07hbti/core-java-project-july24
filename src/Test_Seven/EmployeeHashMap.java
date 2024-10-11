@@ -4,10 +4,39 @@ import Model.employeesMainData;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class EmployeeHashMap
 {
+    //This method will lead us to print the data of city in an order
+    public void printCityWiseData(HashMap<String, ArrayList<employeesMainData>> empMap)
+    {
+        HashSet<String> cities = new HashSet<>();
+        for (ArrayList<employeesMainData> employees : empMap.values())
+        {
+            for (employeesMainData employee : employees)
+            {
+                cities.add(employee.getCity());
+            }
+        }
+
+        for (String city : cities)
+        {
+            System.out.println("Employees from "+city+":");
+            for (ArrayList<employeesMainData> employees : empMap.values())
+            {
+                for (employeesMainData employee : employees)
+                {
+                    if (employee.getCity().equalsIgnoreCase(city))
+                    {
+                        System.out.println("Name: "+employee.getName()+", Salary: "+employee.getSalary()+", City: "+employee.getCity()+", Department: "+employee.getDept());
+                    }
+                }
+            }
+        }
+    }
+
     public void targetedCompaniesEmployees(HashMap<String, ArrayList<employeesMainData>> empMap)
     {
         //The targeted employees of IBM and TCS with salary above 50,000
@@ -147,11 +176,15 @@ public class EmployeeHashMap
 
         //Here we will print the highest and lowest salary employee
         findHighestAndLowestSalaryEmployee(empMap);
+
+        //Calling for printing data by city wise
+        printCityWiseData(empMap);
     }
 
     public static void main(String[] args)
     {
         EmployeeHashMap employeeHashMap= new EmployeeHashMap();
         employeeHashMap.employeeDataStructure();
+
     }
 }

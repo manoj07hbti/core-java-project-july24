@@ -128,7 +128,7 @@ public class EmployeMap {
 // belong to pune city from IBM and TCS
 
     public void displayEmployee(HashMap<String, ArrayList<Employe>> empMap) {
-        System.out.println("display employee who is having salary greater than 50,0000 and belong to pune city from IBM and TCS");
+        System.out.println("1).display employee who is having salary greater than 50,0000 and belong to pune city from IBM and TCS");
         ArrayList<Employe> displayEmployee = new ArrayList<>();
         for (String key : Arrays.asList("IBM","TCS")) {
             ArrayList<Employe> employees = empMap.get(key);
@@ -164,7 +164,7 @@ public class EmployeMap {
                 }
             }
         }
-        System.out.println("EMPLOYEE WITH HIGHEST EMPLOYEE: ");
+        System.out.println("2).EMPLOYEE WITH HIGHEST EMPLOYEE: ");
         System.out.println( " NAME:" + " " +highestSalaryEmployee.getName()+" , " + "Salary:" +" "+ highestSalaryEmployee.getSalary()+" ," + "city:" + " " +highestSalaryEmployee.getCity() +" "+ "department:" + " " +highestSalaryEmployee.getDepartment());
 
 
@@ -177,7 +177,7 @@ public class EmployeMap {
 //3.display companies with employees data company wise
 
     public void displayCompany(HashMap<String, ArrayList<Employe>> empMap) {
-        System.out.println("display all companies employee data company wise ");
+        System.out.println("3).display all companies employee data company wise ");
         for (String key : empMap.keySet()) {
             System.out.println("employee of  " + key + " company is :");
 
@@ -188,6 +188,45 @@ public class EmployeMap {
         }
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
+
+    //4.display data employee together ,who is having same city
+
+    public void sameCityEmployee(HashMap<String, ArrayList<Employe>> empMap){
+        System.out.println("4).print same city employee together...");
+
+        HashMap<String , ArrayList<Employe>>  cityMap = new HashMap<>();
+        for(String key : empMap.keySet()) {
+
+            ArrayList<Employe> employees = empMap.get(key);
+            for(Employe var: employees ){
+                String city = var.getCity();
+                if(cityMap.containsKey(city)) {
+                    cityMap.get(city).add(var);
+                }
+                else{
+                    ArrayList<Employe> dataEmployee= new ArrayList<>();
+                    dataEmployee.add(var);
+                    cityMap.put(city,dataEmployee );
+                }
+            }
+        }
+
+        for(String city: cityMap.keySet()){
+            System.out.println("data of employee in :"+ city +" is: ");
+            ArrayList<Employe> dataEmployee = cityMap.get(city);
+            for(Employe emp: dataEmployee){
+                System.out.println("NAME:"+ emp.getName()+" , "+ "SALARY:"+ emp.getSalary()+ " , "+ "CITY:"+ emp.getCity()+" , "+ "DEPARTMENT:"+ emp.getDepartment());
+            }
+        }
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+    }
+
+    //5.display all employees who is having same salary for all companies
+
+  //  public void sameSalaryEmployee(HashMap<String , ArrayList<Employe>> empMap){
+
+   //     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+    //}
     public static void main(String[] args) {
         EmployeMap obj = new EmployeMap();
 
@@ -195,6 +234,7 @@ public class EmployeMap {
         obj.displayCompany(empMap);
        obj.findEmployee(empMap);
         obj.displayEmployee(empMap);
+        obj.sameCityEmployee(empMap);
     }
 
 

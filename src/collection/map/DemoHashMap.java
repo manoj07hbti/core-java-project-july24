@@ -3,6 +3,7 @@ package collection.map;
 import com.sun.org.glassfish.external.amx.MBeanListener;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class DemoHashMap {
 
@@ -80,9 +81,9 @@ public class DemoHashMap {
 
         //reading data from map : get(key);
 
-        System.out.println(3);
-        System.out.println(1);
-        System.out.println(2);
+        System.out.println(name.get(3));
+        System.out.println(name.get(1));
+        System.out.println(name.get(2));
 
 
         //cheng..
@@ -94,6 +95,14 @@ public class DemoHashMap {
 
         name.put(null,"ruhi");
         System.out.println(name);
+
+
+        Set<Integer>Keys=name.keySet();
+
+        for(Integer var: name.keySet());
+
+        System.out.println("PRINTING MAP USING LOOP:"+name.get(name));
+
     }
 
 }

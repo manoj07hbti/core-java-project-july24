@@ -1,17 +1,17 @@
 package collection;
 
-import model.Employed;
+import model.Employee;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EmployedArrayList {
+public class EmployeeArrayList {
 
-    public ArrayList<Employed> createEmployed(){
-            ArrayList<Employed>EmployedArrayList=new ArrayList<>();
+    public ArrayList<Employee> createEmployee(){
+            ArrayList<Employee>EmployeeArrayList=new ArrayList<>();
             Scanner scanner=new Scanner(System.in);
 
-            System.out.println("please enter the number of Employed thats you want to enter");
+            System.out.println("please enter the number of Employee thats you want to enter");
 
             int size= scanner.nextInt();
 
@@ -19,7 +19,7 @@ public class EmployedArrayList {
 
                 Scanner scanner1=new Scanner(System.in);
 
-                System.out.println("data of Employed"+(i+1));
+                System.out.println("data of Employee"+(i+1));
 
                 System.out.println("name");
                 String name= scanner1.nextLine();
@@ -32,14 +32,14 @@ public class EmployedArrayList {
 
 
             }
-            return EmployedArrayList;
+            return EmployeeArrayList;
         }
 
         public static void main(String[] args) {
 
-        EmployedArrayList obj=new EmployedArrayList();
+        EmployeeArrayList obj=new EmployeeArrayList();
 
-            for(Employed var:obj.createEmployed()){
+            for(Employee var:obj.createEmployee()){
 
         }
     }

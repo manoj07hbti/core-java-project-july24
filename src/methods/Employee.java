@@ -27,16 +27,30 @@ public class Employee {
         // 1 create object using default constructor
 
 
-        Employee emp1 = new Employee();
+        Employee emp = new Employee();
 
 
 
         // 2  objname.methodname();
-        emp1.eat();
-        emp1.work();
-        emp1.sleep();
+        emp.eat();
+        emp.work();
+        emp.sleep();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDepartment(){
+      return department;
+    }
+    public void setDepartment(){
+
+    }
 }
 
 

@@ -6,7 +6,7 @@ public class GooglePay   extends  PaymentGateway{
         
             GooglePay obj = new GooglePay();
             
-            obj.paymentMethod();
+            obj.googlePay();
         }
 
 

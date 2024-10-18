@@ -10,5 +10,6 @@ public class DemoB extends DemoA{
         DemoB demoB= new DemoB();
         demoB.m1();// we are calling parent class method
         demoB.m2();
+
     }
 }

@@ -15,9 +15,9 @@ public class EmployeeMap {
 
         // 01- Employee data
 
-        Employee employee1 = new Employee("rahib", 23, "civil");
-        Employee employee2 = new Employee("zohan", 24, "IT");
-        Employee employee3 = new Employee("Azim", 25, "CS");
+        Employee employee1 = new Employee("rahib", 23, "civil", 800000);
+        Employee employee2 = new Employee("zohan", 24, "IT",60000);
+        Employee employee3 = new Employee("Azim", 25, "CS", 50000);
 
         // 02- list of employee
 
@@ -31,9 +31,9 @@ public class EmployeeMap {
 
         //02 company name
 
-        Employee employee4 = new Employee("Imran", 25, "EE");
-        Employee employee5 = new Employee("Bashu", 26, "CS");
-        Employee employee6 = new Employee("Azib", 27, "IT");
+        Employee employee4 = new Employee("Imran", 25, "EE" ,30000);
+        Employee employee5 = new Employee("Bashu", 26, "CS" ,50000);
+        Employee employee6 = new Employee("Azib", 27, "IT", 40000);
 
         ArrayList<Employee> dxcEmployee = new ArrayList<>();
 

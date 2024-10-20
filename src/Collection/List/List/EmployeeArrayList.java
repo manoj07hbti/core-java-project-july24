@@ -31,13 +31,17 @@ public class EmployeeArrayList {
 
             int age = scanner1.nextInt();
 
-            Scanner scanner2= new Scanner(System.in);
+            System.out.println("SAlARY");
+
+            double salary = scanner1.nextDouble();
+
+            Scanner scanner2 = new Scanner(System.in);
 
             System.out.println("Department");
 
             String department = scanner2.nextLine();
 
-           Employee employee = new Employee(names ,age ,department);
+           Employee employee = new Employee(names,age,department,salary);
 
             employeeArrayList.add(employee);
         }
@@ -51,7 +55,7 @@ public class EmployeeArrayList {
 
         for (Employee employee : obj.createEmployeeList()) {
 
-            System.out.println("NAME:" + employee.getName() + "AGE:" + employee.getAge() + "DEPARTMENT:" + employee.getDepartment());
+            System.out.println("NAME:" + employee.getName() + "AGE:" + employee.getAge() + "SALARY :" +employee.getSalary() + "DEPARTMENT:" + employee.getDepartment());
 
 
         }

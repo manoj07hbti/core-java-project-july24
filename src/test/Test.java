@@ -44,20 +44,82 @@ public class Test {
       return employeeArrayList;
   }
 
+  public void FindHighestLowestSalary(ArrayList<Employee> employeeArrayList){
+      Double highestSalary=0.0;
+      Double lowestSalary=0.0;
+
+      // finding highest
+      for( Employee emp: employeeArrayList){
+
+          // here we are comparing salary with our highest salary, if our salary is not highest it means current emp salary is highest
+          if(highestSalary<emp.getSalary()){
+              highestSalary=emp.getSalary();
+          }
+      }
+      System.out.println("We have found emp with Highest salary: "+highestSalary);
+
+
+  }
+
+  public void printSameCityEmployee(  HashMap<String, ArrayList<Employee>> companyWiseData){
+      // we need to process two company data at a time
+
+      System.out.println("which company data you want to compare");
+      Scanner scanner= new Scanner(System.in);
+      String company1= scanner.nextLine();
+      System.out.println("which company data you want to compare");
+      String company2= scanner.nextLine();
+
+      ArrayList <Employee> company1Employee= companyWiseData.get(company1);
+      ArrayList <Employee> company2Employee= companyWiseData.get(company2);
+
+      for(Employee company1Emp : company1Employee){
+
+          for(Employee company2Emp : company2Employee){
+
+              if(company1Emp.getCity().equals(company2Emp.getCity())){
+
+                  System.out.println("COMPANY 1: Name: "+company1Emp.getName()+" Salary :"+company1Emp.getSalary()+ " Dept: "+company1Emp.getDept() +" City: "+company1Emp.getCity());
+                  System.out.println("COMPANY 2: Name: "+company2Emp.getName()+" Salary :"+company2Emp.getSalary()+ " Dept: "+company2Emp.getDept() +" City: "+company2Emp.getCity());
+
+              }
+          }
+      }
+
+
+
+  }
 
     public static void main(String[] args) {
 
-      Test obj= new Test();
+        Test obj = new Test();
+        String choice = "Y";
+        HashMap<String, ArrayList<Employee>> companyWiseData = new HashMap<>();
+        while (choice.equals("Y")) {
+            System.out.println("Please enter company name for which you want to create data");
 
-        System.out.println("Please enter company name for which you want to create data");
+            Scanner scanner = new Scanner(System.in);
+            String companyName = scanner.nextLine();
+            ArrayList<Employee> employeeArrayList = obj.createEmployeeData();
 
-        Scanner scanner= new Scanner(System.in);
-        String company=scanner.nextLine();
-        ArrayList<Employee> employeeArrayList=  obj.createEmployeeData();
+            companyWiseData.put(companyName, employeeArrayList);
 
-        HashMap<String, ArrayList<Employee>> companyWiseData= new HashMap<>();
-        companyWiseData.put(company,employeeArrayList);
+            for(String key: companyWiseData.keySet()){
+
+                for(Employee emp: companyWiseData.get(key)){
+                    System.out.println("Company name :"+key);
+                    System.out.println("Name: "+emp.getName()+" Salary :"+emp.getSalary()+ " Dept: "+emp.getDept() +" City: "+emp.getCity());
+                }
+            }
+            System.out.println("Do you want to add one more company data? Press Y to continue or any other to exit");
+            Scanner scanner1= new Scanner(System.in);
+            choice=scanner1.nextLine();
 
 
+        }
+       // calling highest lowest salary method
+        obj.FindHighestLowestSalary(companyWiseData.get("IBM"));
+       // calling same city method
+       obj.printSameCityEmployee(companyWiseData);
     }
 }

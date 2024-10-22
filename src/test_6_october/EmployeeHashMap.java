@@ -10,16 +10,15 @@ import java.util.Scanner;
 public class EmployeeHashMap {
 
     //create hashmap
-    public HashMap<String, ArrayList<Employee>> createEmpHashMap(){
+    public ArrayList<Employee> createEmpArrayList(){
 
-        HashMap<String, ArrayList<Employee>> empHashMap = new HashMap<>();
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the number of employee you want to add in IBM");
+        System.out.println("Enter the number of employee you want to add");
         int num = sc.nextInt();
         sc.nextLine();
 
-        ArrayList<Employee> ibmEmployees = new ArrayList<>();
+        ArrayList<Employee> employeeArrayList = new ArrayList<>();
         for(int i=0; i<num; i++){
             System.out.println("Enter the details of Employee "+(i+1));
 
@@ -35,87 +34,13 @@ public class EmployeeHashMap {
 
             Employee tempEmp = new Employee(name,salary,city,dept);
 
-            ibmEmployees.add(tempEmp);
+            employeeArrayList.add(tempEmp);
 
         }
-        empHashMap.put("IBM", ibmEmployees);
-
-
-        System.out.println("Enter the number of employee you want to add in TCS");
-        num = sc.nextInt();
-        sc.nextLine();
-
-        ArrayList<Employee> tcsEmployees = new ArrayList<>();
-        for(int i=0; i<num; i++){
-            System.out.println("Enter the details of Employee "+(i+1));
-            System.out.println("Enter Employee Name");
-            String name = sc.nextLine();
-            System.out.println("Enter Employee salary");
-            double salary= sc.nextDouble();
-            sc.nextLine();
-            System.out.println("Enter Employee City");
-            String city = sc.nextLine();
-            System.out.println("Enter Employee Department");
-            String dept = sc.nextLine();
-
-            Employee tempEmp = new Employee(name,salary,city,dept);
-
-            tcsEmployees.add(tempEmp);
-
-        }
-        empHashMap.put("TCS", tcsEmployees);
-
-        System.out.println("Enter the number of employee you want to add in WIPRO");
-        num = sc.nextInt();
-        sc.nextLine();
-
-        ArrayList<Employee> wiproEmployees = new ArrayList<>();
-        for(int i=0; i<num; i++){
-            System.out.println("Enter the details of Employee "+(i+1));
-            System.out.println("Enter Employee Name");
-            String name = sc.nextLine();
-            System.out.println("Enter Employee salary");
-            double salary= sc.nextDouble();
-            sc.nextLine();
-            System.out.println("Enter Employee City");
-            String city = sc.nextLine();
-            System.out.println("Enter Employee Department");
-            String dept = sc.nextLine();
-
-            Employee tempEmp = new Employee(name,salary,city,dept);
-
-            wiproEmployees.add(tempEmp);
-
-        }
-        empHashMap.put("WIPRO", wiproEmployees);
-
-        System.out.println("Enter the number of employee you want to add in CTS");
-        num = sc.nextInt();
-        sc.nextLine();
-
-        ArrayList<Employee> ctsEmployees = new ArrayList<>();
-        for(int i=0; i<num; i++){
-            System.out.println("Enter the details of Employee "+(i+1));
-            System.out.println("Enter Employee Name");
-            String name = sc.nextLine();
-            System.out.println("Enter Employee salary");
-            double salary= sc.nextDouble();
-            sc.nextLine();
-            System.out.println("Enter Employee City");
-            String city = sc.nextLine();
-            System.out.println("Enter Employee Department");
-            String dept = sc.nextLine();
-
-            Employee tempEmp = new Employee(name,salary,city,dept);
-
-            ctsEmployees.add(tempEmp);
-
-        }
-        empHashMap.put("CTS", ctsEmployees);
 
         System.out.println("\n\n\n");
 
-        return empHashMap;
+        return employeeArrayList;
 
     }
 
@@ -197,30 +122,27 @@ public class EmployeeHashMap {
     public void displaySameCityEmp(HashMap<String, ArrayList<Employee>> empHashMap){
 
         System.out.println("--------all companies employees data City wise-------------");
+        Scanner sc = new Scanner(System.in);
 
-        HashMap<String, ArrayList<Employee>>  cityHashMap = new HashMap<>();
+        System.out.println("Which two company data you want to compare");
+        String company1= sc.nextLine();
+        String company2= sc.nextLine();
 
-        for(String key : empHashMap.keySet()){
+        ArrayList<Employee> company1Employees = empHashMap.get(company1);
+        ArrayList<Employee> company2Employees = empHashMap.get(company2);
 
-            ArrayList<Employee> employees =  empHashMap.get(key);
-            for(Employee emp : employees){
-                String city = emp.getCity();
-                if(cityHashMap.containsKey(city)){
-                    cityHashMap.get(city).add(emp);
-                } else{
-                    ArrayList<Employee> cityEmployees = new ArrayList<>();
-                    cityEmployees.add(emp);
-                    cityHashMap.put(city,cityEmployees);
+
+        for(Employee company1Emp : company1Employees){
+
+            for(Employee company2Emp : company2Employees){
+
+                if(company1Emp.getCity().equals(company2Emp.getCity())){
+                    System.out.println("Name: "+company1Emp.getName()+ " Salary: "+company1Emp.getSalary() +" City: "+company1Emp.getCity() +" Dept: " +company1Emp.getDept()) ;
+                    System.out.println("Name: "+company2Emp.getName()+ " Salary: "+company2Emp.getSalary() +" City: "+company2Emp.getCity() +" Dept: " +company2Emp.getDept()) ;
                 }
-            }
-        }
 
-        for(String city : cityHashMap.keySet()){
-            System.out.println("Data of employees in " + city + " is:");
-            ArrayList<Employee> cityEmployees = cityHashMap.get(city);
-            for(Employee emp : cityEmployees){
-                System.out.println("Name: " + emp.getName() + " Salary: " + emp.getSalary() + " Dept: " + emp.getDept());
             }
+
         }
 
         System.out.println("\n\n\n");
@@ -230,14 +152,66 @@ public class EmployeeHashMap {
     //5: display same salary Employees
     public void displaySameSalaryyEmp(HashMap<String, ArrayList<Employee>> empHashMap){
 
+        System.out.println("--------all companies employees having same salary-------------");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Which two company data you want to compare");
+        String company1= sc.nextLine();
+        String company2= sc.nextLine();
+
+        ArrayList<Employee> company1Employees = empHashMap.get(company1);
+        ArrayList<Employee> company2Employees = empHashMap.get(company2);
+
+
+        for(Employee company1Emp : company1Employees){
+
+            for(Employee company2Emp : company2Employees){
+
+                if(company1Emp.getSalary() == company2Emp.getSalary()){
+                    System.out.println("Name: "+company1Emp.getName()+ " Salary: "+company1Emp.getSalary() +" City: "+company1Emp.getCity() +" Dept: " +company1Emp.getDept()) ;
+                    System.out.println("Name: "+company2Emp.getName()+ " Salary: "+company2Emp.getSalary() +" City: "+company2Emp.getCity() +" Dept: " +company2Emp.getDept()) ;
+                }
+
+            }
+
+        }
+
+        System.out.println("\n\n\n");
+
     }
 
 
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
         EmployeeHashMap obj = new EmployeeHashMap();
+        HashMap<String,ArrayList<Employee>> empHashMap = new HashMap<>();
 
-        HashMap<String,ArrayList<Employee>> empHashMap = obj.createEmpHashMap();
+        String choice = "Y";
+
+        while(choice.equals("Y")){
+
+            System.out.println("Please Enter the company Name to Enter Employee data");
+            String companyName = sc.nextLine();
+            ArrayList<Employee> employeeArrayList = obj.createEmpArrayList();
+
+            empHashMap.put(companyName, employeeArrayList);
+
+            for(String key : empHashMap.keySet()){
+
+                for (Employee emp : empHashMap.get(key)){
+                    System.out.println("Company Name: "+key + "  Name: "+emp.getName()+ " Salary: "+emp.getSalary() +" City: "+emp.getCity() +" Dept: " +emp.getDept()) ;
+                }
+
+            }
+
+            System.out.println("Do you want to add more company data? Press Y to continue or any other key to exit");
+            choice = sc.nextLine();
+        }
+
+
+
+
+
 
         //1
         obj.diplayEmployee(empHashMap);
@@ -247,6 +221,9 @@ public class EmployeeHashMap {
         obj.displayData(empHashMap);
         //4
         obj.displaySameCityEmp(empHashMap);
+        //5
+        obj.displaySameSalaryyEmp(empHashMap);
+
 
 
 

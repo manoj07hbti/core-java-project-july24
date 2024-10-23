@@ -1,26 +1,22 @@
 package model;
 
-public class Person {
+public class Employee {
 
     String name;
     int age;
-    String field;
+    String department;
+
 
 
     // param constructor
 
-
-    public Person(String name, int age, String field) {
+    public Employee(String name, int age, String department) {
         this.name = name;
         this.age = age;
-        this.field = field;
+        this.department = department;
     }
 
-    public Person() {
-
-    }
-
-    // getter/setter
+    // getter/ setter
 
 
     public String getName() {
@@ -39,13 +35,11 @@ public class Person {
         this.age = age;
     }
 
-    public String getField() {
-        return field;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setField(String field) {
-        this.field = field;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 }
-
-

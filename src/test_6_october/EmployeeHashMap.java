@@ -36,7 +36,6 @@ public class EmployeeHashMap {
         scanner.nextLine();
         ArrayList<Employeeee> tcsEmployees = new ArrayList<>();
         for (int i = 0; i < number; i++) {
-            System.out.println("Enter the details of Employee" + (i + 1));
             Scanner scanner1 = new Scanner(System.in);
             System.out.println("Enter Name of Employees");
             String name = scanner1.nextLine();
@@ -60,7 +59,6 @@ public class EmployeeHashMap {
         scanner.nextLine();
         ArrayList<Employeeee> wiproEmployees = new ArrayList<>();
         for (int i = 0; i < number; i++) {
-            System.out.println("Enter the details of Employee" + (i + 1));
             Scanner scanner3 = new Scanner(System.in);
             System.out.println("Enter Name of Employees");
             String name = scanner3.nextLine();
@@ -84,7 +82,6 @@ public class EmployeeHashMap {
         scanner.nextLine();
         ArrayList<Employeeee> tctEmployees = new ArrayList<>();
         for (int i = 0; i < number; i++) {
-            System.out.println("Enter the details of Employee" + (i + 1));
             Scanner scanner2 = new Scanner(System.in);
             System.out.println("Enter Name of Employees");
             String name = scanner2.nextLine();
@@ -106,5 +103,12 @@ public class EmployeeHashMap {
     public static void main(String[] args) {
         EmployeeHashMap obj = new EmployeeHashMap();
         obj.createHashMap();
-    }
+       HashMap<String,ArrayList<Employeeee>>companyWiseData= new HashMap<>();
+      for (String key : companyWiseData.keySet()){
+          for (Employeeee emp : companyWiseData.get(key)){
+              System.out.println("Name : "+emp.getName()+"Age : "+emp.getAge()+"Salary : "+emp.getSalary()+"Dept : "+emp.getDept());
+          }
+      }
+
+}
 }

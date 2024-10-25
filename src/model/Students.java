@@ -2,10 +2,10 @@ package model;
 
 public class Students {
 
-    String name;
-    int age;
-    String course;
-    String schoolName;
+   public  String name;
+    public  int age;
+   public String course;
+   public String schoolName;
 
     public Students(String name, int age, String course, String schoolName) {
         this.name = name;

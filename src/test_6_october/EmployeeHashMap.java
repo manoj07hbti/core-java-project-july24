@@ -208,11 +208,6 @@ public class EmployeeHashMap {
             choice = sc.nextLine();
         }
 
-
-
-
-
-
         //1
         obj.diplayEmployee(empHashMap);
         //2
@@ -223,12 +218,6 @@ public class EmployeeHashMap {
         obj.displaySameCityEmp(empHashMap);
         //5
         obj.displaySameSalaryyEmp(empHashMap);
-
-
-
-
-
-
 
     }
 }

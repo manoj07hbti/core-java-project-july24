@@ -54,6 +54,8 @@ public class Test {
         int highestAge = 0;
         int lowestAge = 0;
         //finding highest
+
+
         for (Student student : studentArrayList) {
 
 
@@ -71,54 +73,55 @@ public class Test {
             }
         }
         System.out.println("LOWEST AGE :" + lowestAge);
-    }
-
-
-    //3). display all the students data university wise
-    public void universityWiseStudent(HashMap<String, ArrayList<Student>> studentUniversityWise) {
-        System.out.println("All the students data university wise..");
-
-        for (String key : studentUniversityWise.keySet()) {
-
-            System.out.println("Data of " + key + "university is :");
-
 
         }
-    }
+        //3). display all the students data university wise
+        public void universityWiseStudent (HashMap < String, ArrayList < Student >> studentUniversityWise){
+            System.out.println("All the students data university wise..");
 
-    //4.  display all student data together who is having same city in jnu and amu
-    public void printSameCityStudent(HashMap<String,ArrayList<Student>>companyWiseData){
-        for (String key : companyWiseData.keySet()) {
+            for (String key : studentUniversityWise.keySet()) {
 
-            for (Student student : companyWiseData.get(key)) {
-                System.out.println("COMPANY NAME: " + key);
-                System.out.println("Name: " + student.getName() + " age: " + student.getAge() + "city: " + student.getCity() + " dept: " + student.getDept());
+                System.out.println("Data of " + key + "university is :");
+                System.out.println("NAME:"+studentUniversityWise.get(key));
+
+
             }
         }
-    }
 
-    //5. display only student who is  having same age for all university in jnu and amu
-    public void sameAgeStudent(HashMap<String, ArrayList<Student>> studentUniversityWise) {
+        //4.  display all student data together who is having same city in jnu and amu
+        public void printSameCityStudent (HashMap < String, ArrayList < Student >> companyWiseData){
+            for (String key : companyWiseData.keySet()) {
 
-        ArrayList<Student> jnuStudent = studentUniversityWise.get("JNU");
-
-        ArrayList<Student> amuStudent = studentUniversityWise.get("AMU");
-
-        for (Student student1 : jnuStudent) {
-
-            for (Student student2 : amuStudent) {
-
-                if (student1.getAge() == student2.getAge()) {
-
-                    System.out.println("JNU UNIVERSITY : NAme " + student1.getName() + " Age " + student1.getAge() + " City " + student1.getCity() + " dept " + student1.getDept());
-
-                    System.out.println("AMU UNIVERSITY : Name " + student2.getName() + " Age " + student2.getAge() + " City " + student2.getCity() + " dept " + student2.getDept());
+                for (Student student : companyWiseData.get(key)) {
+                    System.out.println("COMPANY NAME: " + key);
+                    System.out.println("Name: " + student.getName() + " age: " + student.getAge() + "city: " + student.getCity() + " dept: " + student.getDept());
                 }
             }
-
         }
-    }
-    public static void main(String[] args) {
+
+        //5. display only student who is  having same age for all university in jnu and amu
+        public void sameAgeStudent (HashMap < String, ArrayList < Student >> studentUniversityWise){
+
+            ArrayList<Student> jnuStudent = studentUniversityWise.get("JNU");
+
+            ArrayList<Student> amuStudent = studentUniversityWise.get("AMU");
+
+            for (Student student1 : jnuStudent) {
+
+                for (Student student2 : amuStudent) {
+
+                    if (student1.getAge() == student2.getAge()) {
+
+                        System.out.println("JNU UNIVERSITY : NAme " + student1.getName() + " Age " + student1.getAge() + " City " + student1.getCity() + " dept " + student1.getDept());
+
+                        System.out.println("AMU UNIVERSITY : Name " + student2.getName() + " Age " + student2.getAge() + " City " + student2.getCity() + " dept " + student2.getDept());
+                    }
+                }
+
+            }
+        }
+
+    public void main(String[] args) {
 
 
 

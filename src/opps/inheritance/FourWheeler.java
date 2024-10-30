@@ -9,6 +9,8 @@ public class FourWheeler extends  Vehicle {
             FourWheeler obj = new FourWheeler();
 
             obj.fourWheelers();
+
         }
+
     }
 

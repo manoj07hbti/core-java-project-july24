@@ -53,7 +53,7 @@ public class Student {
             ArrayList<StudentModel> studentModelArrayList = studentUniversityWise.get(key);
 
                 for (StudentModel std : studentModelArrayList) {
-                    if (std.getAge() <= 25 && std.getCity().equals("PUNE")) {
+                    if (std.getAge() > 25 && std.getCity().equals("PUNE")) {
                         System.out.println("COMPANY NAME :" + key + "NAME:" + std.getName() + " " + "AGE:" + std.getAge() + " " + "CITY:" + std.getCity() + " " + "DEPARTMENT:" + std.getDepartment());
                     }
                 }

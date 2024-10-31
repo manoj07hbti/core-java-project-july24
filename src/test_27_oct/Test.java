@@ -49,22 +49,20 @@ public class Test {
     }
 
     //2.
-    public void FindHighestLowestAge(ArrayList<Student> studentArrayList) {
+    public void FindHighestLowestAge( ArrayList<Student>studentArrayList) {
 
         int highestAge = 0;
         int lowestAge = 0;
         //finding highest
 
 
+
         for (Student student : studentArrayList) {
-
-
             if (highestAge < student.getAge()) {
                 highestAge = student.getAge();
             }
         }
         System.out.println("WE HAVE FOUND STUDENT WITH HIGHEST AGE :" + highestAge);
-
         //finding lowest
         for (Student student : studentArrayList) {
 
@@ -82,7 +80,7 @@ public class Test {
             for (String key : studentUniversityWise.keySet()) {
 
                 System.out.println("Data of " + key + "university is :");
-                System.out.println("NAME:"+studentUniversityWise.get(key));
+
 
 
             }
@@ -94,6 +92,7 @@ public class Test {
 
                 for (Student student : companyWiseData.get(key)) {
                     System.out.println("COMPANY NAME: " + key);
+
                     System.out.println("Name: " + student.getName() + " age: " + student.getAge() + "city: " + student.getCity() + " dept: " + student.getDept());
                 }
             }

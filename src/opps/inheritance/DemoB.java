@@ -12,4 +12,8 @@ public class DemoB extends DemoA {
         demoA.h4();
     }
 
+    protected void h5(){
+        System.out.println("this is relation of demo A");
+    }
+
 }

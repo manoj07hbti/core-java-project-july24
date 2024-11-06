@@ -33,7 +33,7 @@ public class IntegerHashSet {
 
         IntegerHashSet object = new IntegerHashSet();
         for (Integer var : object.createIntegerHashSet()) {
-            System.out.println("Printing Integer HashSet:"+var);
+            System.out.println("Printing Integer HashSet:" + var);
         }
 
 

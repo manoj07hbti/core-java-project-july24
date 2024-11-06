@@ -11,6 +11,7 @@ public class DemoC extends DemoB{
         demoC.h2();
         demoC.h3();
         demoC.h4();
+        demoC.h5();
 
     }
 }

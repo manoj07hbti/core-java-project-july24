@@ -8,7 +8,7 @@ public class DemoLinkedHashSet {
 
         LinkedHashSet <String>books= new LinkedHashSet<>();
 
-        books.add(" Low of Attraction");
+        books.add("Low of Attraction");
         books.add("rich dad and poor dad");
         books.add("business mind");
         books.add("think growth");

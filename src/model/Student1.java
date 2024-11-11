@@ -2,15 +2,15 @@ package model;
 
 import java.util.Objects;
 
-public class Employee1 {
+public class Student1 {
     String name;
-    double salary;
+    int age;
     String city;
     String dept;
 
-    public Employee1(String name, double salary, String city, String dept) {
+    public Student1(String name, int age, String city, String dept) {
         this.name = name;
-        this.salary = salary;
+        this.age = age;
         this.city = city;
         this.dept = dept;
     }
@@ -19,13 +19,13 @@ public class Employee1 {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee1 employee1 = (Employee1) o;
-        return salary == employee1.salary && Objects.equals(name, employee1.name) && Objects.equals(city, employee1.city) && Objects.equals(dept, employee1.dept);
+        Student1 student1 = (Student1) o;
+        return age == student1.age && Objects.equals(name, student1.name) && Objects.equals(city, student1.city) && Objects.equals(dept, student1.dept);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, salary, city, dept);
+        return Objects.hash(name, age, city, dept);
     }
 
     public String getName() {
@@ -36,12 +36,12 @@ public class Employee1 {
         this.name = name;
     }
 
-    public double getSalary() {
-        return salary;
+    public int getAge() {
+        return age;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getCity() {
